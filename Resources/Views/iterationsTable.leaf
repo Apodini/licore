@@ -1,0 +1,37 @@
+#extend("base")
+#set("content")
+    <div style="color:blue;text-align:center;margin-left:100px;margin-right:100px;margin-top:30px;margin-bottom:30px">
+      <h1>Iterations</h1>
+    </div>
+    
+    <div style="color:blue;text-align:center;margin-left:100px;margin-right:100px;margin-top:30px;margin-bottom:30px">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th>Branch ID</th>
+            <th>Branch Creation Date</th>
+            <th>Branch Ref ID</th>
+            <th>Iterations</th>
+          </tr>
+        </thead>
+        <tbody>
+         #for(branch in branches):
+           <tr>
+             <td>
+               #(branch.id)
+             </td>
+             <td>
+               #(branch.creationDate)
+             </td>
+             <td>
+               #(branch.refId)
+             </td>
+             <td>
+               #(branch.iterations)
+             </td>
+           </tr>
+        #endfor
+        </tbody>
+      </table>
+    </div>
+#set

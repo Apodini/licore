@@ -1,0 +1,47 @@
+#extend("base")
+#set("content")
+    <div style="color:blue;text-align:center;margin-left:100px;margin-right:100px;margin-top:30px;margin-bottom:30px">
+      <h1>#(title)</h1>
+
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>Job ID</th>
+              <th>Job Status</th>
+              <th>PR ID</th>
+              <th>Commit Hash</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            #for(reviewJob in reviewJobs):
+              <tr>
+                <td>
+                  #(reviewJob.id)
+                </td>
+                <td>
+                  #(reviewJob.status)
+                </td>
+                <td>
+                  #(reviewJob.scmId)
+                </td>
+                <td>
+                  #(reviewJob.latestCommit)
+                </td>
+                <td>
+                    <form method="post" action="/jobs/#(reviewJob.id)/retry">
+                      <button type="submit" class="btn btn-primary">Retry</button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/jobs/#(reviewJob.id)/remove">
+                      <button type="submit" class="btn btn-primary" style="background-color:red;border-color:red">Remove Job</button>
+                    </form>
+                </td>
+              </tr>
+           #endfor
+          </tbody>
+        </table>
+    </div>
+#set

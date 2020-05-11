@@ -1,0 +1,31 @@
+#extend("base")
+#set("content")
+    <div style="color:blue;text-align:center;margin-left:100px;margin-right:100px;margin-top:30px;margin-bottom:30px">
+      <h1>#(title)</h1>
+
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>PR ID</th>
+              <th>Latest Commit Hash</th>
+              <th>Ref ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            #for(pullRequest in pullRequests):
+              <tr>
+                <td>
+                  #(pullRequest.scmId)
+                </td>
+                <td>
+                  #(pullRequest.latestCommit)
+                </td>
+                <td>
+                  #(pullRequest.refId)
+                </td>
+              </tr>
+           #endfor
+          </tbody>
+        </table>
+    </div>
+#set

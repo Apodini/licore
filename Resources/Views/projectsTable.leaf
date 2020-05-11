@@ -1,0 +1,45 @@
+#extend("base")
+#set("content")
+<div style="color:blue;text-align:center;margin-left:100px;margin-right:100px;margin-top:30px;margin-bottom:30px">
+  <h1>#(title)</h1>
+
+    <table class="table table-bordered table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th>Project ID</th>
+          <th>Project Name</th>
+          <th>Source Control Type</th>
+          <th>Source Control URL</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        #for(project in projects):
+          <tr class="nav-item">
+            <td>
+              #(project.id)
+            </td>
+            <td>
+              #(project.name)
+            </td>
+            <td>
+              #(project.scmSystem.scmType)
+            </td>
+            <td>
+              #(project.scmSystem.scmURL)
+            </td>
+            <td>
+              <div class="flex-container" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+                  <a class="btn btn-primary" href="/projects/#(project.id)/" role="button" style="margin-right:10px;">Show</a>
+                  
+                  <form method="post" action="/projects/#(project.id)/remove">
+                    <button type="submit" class="btn btn-primary" style="background-color:red;border-color:red;margin-left:10px;">Remove</button>
+                  </form>
+              </div>
+            </td>
+          </tr>
+       #endfor
+      </tbody>
+    </table>
+</div>
+#set

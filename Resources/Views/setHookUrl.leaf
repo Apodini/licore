@@ -1,0 +1,13 @@
+#extend("base")
+#set("content")
+    <div style="color:blue;text-align:center;margin-left:100px;margin-right:100px;margin-top:30px;margin-bottom:30px">
+      <form method="post">
+        <div class="form-group">
+          <label for="url">URL</label>
+          <input type="text" name="url" class="form-control" id="url"/>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Set URL</button>
+      </form>
+    </div>
+#set

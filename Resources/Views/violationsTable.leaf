@@ -1,0 +1,33 @@
+#extend("base")
+#set("content")
+    <div style="color:blue;text-align:center;margin-left:100px;margin-right:100px;margin-top:30px;margin-bottom:30px">
+      <h1>Violations</h1>
+    </div>
+    
+    <div style="color:blue;text-align:center;margin-left:100px;margin-right:100px;margin-top:30px;margin-bottom:30px">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th>Rule Name</th>
+            <th>Violation Occurence</th>
+            <th>Violation on Average</th>
+          </tr>
+        </thead>
+        <tbody>
+         #for(violation in violations):
+           <tr>
+             <td>
+               #(violation.name)
+             </td>
+             <td>
+               #(violation.occurence)
+             </td>
+             <td>
+               #(violation.average)
+             </td>
+           </tr>
+        #endfor
+        </tbody>
+      </table>
+    </div>
+#set

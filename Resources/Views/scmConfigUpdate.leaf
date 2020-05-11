@@ -1,0 +1,35 @@
+#extend("base")
+#set("content")
+<div style="color:blue;text-align:center;margin-left:100px;margin-right:100px;margin-top:30px;margin-bottom:30px">
+  <h1>SCM Update</h1>
+
+  <form method="post">
+    <div class="form-group">
+      <label for="name">SCM Name</label>
+      <input value=#(name) type="text" name="name" class="form-control" id="name"/>
+    </div>
+    
+    <div class="form-group">
+      <input type="radio" name="scmType" value="bitbucket" #if(scmType == "bitbucket"): checked #endif> Bitbucket <br>
+      <input type="radio" name="scmType" value="github" #if(scmType == "github"): checked #endif> Github <br>
+    </div>
+    
+    <div class="form-group">
+      <label for="scmURL">SCM URL</label>
+      <input value=#(scmURL) type="text" name="scmURL" class="form-control" id="scmURL"/>
+    </div>
+  
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" name="username" class="form-control" id="username"/>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" name="password" class="form-control" id="password"/>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>
+#set

@@ -1,0 +1,39 @@
+#extend("base")
+#set("content")
+<div style="color:blue;text-align:center;margin-left:100px;margin-right:100px;margin-top:30px;margin-bottom:30px">
+  <h1>Project Configuration Update</h1>
+
+  <form method="post">
+    <div class="form-group">
+      <label for="name">Project Name</label>
+      <input type="text" value="#(name)" name="name" class="form-control" id="name"/>
+    </div>
+    
+    <div class="form-group">
+      <label for="key">Project Key</label>
+      <input type="text" value="#(key)" name="key" class="form-control" id="key"/>
+    </div>
+    
+    <div class="form-group">
+      <label for="scmSystemId">Select SCM</label>
+      <select value="#(scmSystemId)" class="custom-select" type="text" name="scmSystemId" id="scmSystemId">
+        #for(scmSystem in scmSystems):
+            <option value=#(scmSystem.id) #if(scmSystemId == scmSystem.id): selected #endif>#(scmSystem.name)</option>
+        #endfor
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="rules">Rules</label>
+      <textarea class="form-control" name="rules" id="rules" rows="10">#(rules)</textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="slackToken">Slack Token</label>
+      <input type="text" value=#(slackToken) class="form-control" name="slackToken" id="slackToken"/>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>
+#set

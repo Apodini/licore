@@ -1,0 +1,30 @@
+#extend("base")
+#set("content")
+    <div style="color:blue;text-align:center;margin-left:100px;margin-right:100px;margin-top:30px;margin-bottom:30px">
+      <h1>Update User</h1>
+
+      <form method="post" action="/licoreUser">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input value=#(username) type="text" name="username" class="form-control" id="username"/>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">E-Mail</label>
+          <input #if(email != " "):value=#(email)#endif type="text" name="email" class="form-control" id="email"/>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" class="form-control" id="password"/>
+        </div>
+        
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" name="confirmPassword" class="form-control" id="confirmPassword"/>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update User</button>
+      </form>
+    </div>
+#set

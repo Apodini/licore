@@ -1,0 +1,31 @@
+#extend("base")
+#set("content")
+    <div style="color:blue;text-align:center;margin-left:100px;margin-right:100px;margin-top:30px;margin-bottom:30px">
+      <h1>#(title)</h1>
+
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>Repository ID</th>
+              <th>Repository Name</th>
+              <th>Repository Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            #for(repository in repositories):
+              <tr>
+                <td>
+                  #(repository.id)
+                </td>
+                <td>
+                  #(repository.name)
+                </td>
+                <td>
+                  <a href="/repos/#(repository.id)"><button class="btn btn-primary">Show Details</button></a>
+                </td>
+              </tr>
+           #endfor
+          </tbody>
+        </table>
+    </div>
+#set

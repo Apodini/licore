@@ -1,0 +1,75 @@
+version: "3.7"
+services:
+  nginx:
+    image: nginx:latest
+    container_name: licore_nginx
+    depends_on:
+      - licore
+    ports:
+      - 8080:8080
+      - 443:443
+    restart: always
+    volumes:
+      - './nginx.conf:/etc/nginx/nginx.conf:ro'
+    networks:
+      - licore_nginx_network
+  licore:
+    container_name: licore
+    depends_on:
+      - redis
+      - postgresql
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '80:8080'
+    restart: always
+    volumes:
+      - .:/app
+    networks:
+      - licore_nginx_network
+      - licore_postgres_network
+      - licore_redis_network
+    environment:
+      - SLEEP_LENGTH=5
+      - POSTGRESQL_HOSTNAME=licore_postgres
+      - POSTGRESQL_USER=postgres
+      - POSTGRESQL_PASSWORD=postgres
+      - POSTGRESQL_DATABASE=db
+      - REDIS_HOSTNAME=licore_redis
+      - REDIS_PASSWORD=redis
+  redis:
+    container_name: licore_redis
+    image: 'bitnami/redis:latest'
+    hostname: licore_redis
+    restart: always
+    environment:
+      - REDIS_HOSTNAME=licore_redis
+      - REDIS_PASSWORD=redis
+    networks:
+      - licore_redis_network
+  postgresql:
+    container_name: licore_postgres
+    image: 'bitnami/postgresql:latest'
+    hostname: licore_postgresql
+    restart: always
+    environment:
+      - POSTGRESQL_HOSTNAME=licore_postgres
+      - POSTGRESQL_USER=postgres
+      - POSTGRESQL_PASSWORD=postgres
+      - POSTGRESQL_DATABASE=db
+    networks:
+      - licore_postgres_network
+    volumes:
+      - postgresql-persistence:/bitnami/postgresql
+
+networks:
+  licore_nginx_network:
+    driver: bridge
+  licore_postgres_network:
+    driver: bridge
+  licore_redis_network:
+    driver: bridge
+
+volumes:
+  postgresql-persistence:
