@@ -1,6 +1,6 @@
 ## How to use this repository
 ### Template
-When creating a new repository make sure to select this repository as a repository template. ![](Images/repository_template.png)
+When creating a new repository make sure to select this repository as a repository template. ![](https://github.com/Apodini/Template-Repository/raw/develop/Images/RepositoryTemplate.png)
 
 ### GitHub Actions
 This repository contains several workflows which require you to provide a GitHub Secret. Secrets are encrypted environment variables that you create in a repository for use with GitHub Actions.
@@ -10,7 +10,7 @@ This repository contains several workflows which require you to provide a GitHub
 - Then click the `Generate token` button.
 - Make sure to copy the access token
 
-![](Images/access_token.png)
+![](https://github.com/Apodini/Template-Repository/raw/develop/Images/AccessToken.png)
 
 #### 2. Create a secret
 Next, you’ll need to add a new secret to your repository.
@@ -20,7 +20,7 @@ Next, you’ll need to add a new secret to your repository.
 - Paste the copied personal access token into  `Value`
 - Click `Add secret`
 
-![](Images/secret.png)
+![](https://github.com/Apodini/Template-Repository/raw/develop/Images/Secret.png)
 
 ### ⬆️ Remove everything up to here ⬆️
 
