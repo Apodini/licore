@@ -1,4 +1,4 @@
-module: Run
+module: App
 author: Oguz Sutanrikulu
 theme: fullwidth
 output: ./docs
