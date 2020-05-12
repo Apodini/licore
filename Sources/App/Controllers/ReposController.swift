@@ -34,8 +34,12 @@ struct ReposController: RouteCollection {
             return req.view.render("login")
         }
         
-        guard let repositoryParameter = req.parameters.get("repoID") else { return req.view.render("index") }
-        guard let repositoryId = Int(repositoryParameter) else { return req.view.render("index") }
+        guard let repositoryParameter = req.parameters.get("repoID") else {
+            return req.view.render("index")
+        }
+        guard let repositoryId = Int(repositoryParameter) else {
+            return req.view.render("index")
+        }
         
         var openingTimes: [Double] = []
         var iterations: [Double] = []
