@@ -1,4 +1,4 @@
-module: Licore
+module: Run
 author: Oguz Sutanrikulu
 theme: fullwidth
 output: ./docs
