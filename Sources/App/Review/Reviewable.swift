@@ -8,6 +8,8 @@
 import Vapor
 import SwiftLintFramework
 
+//This protocol specifies a common interface for starting a review.
+//The method 'runReview' defines the concrete implementation of a review process.
 public protocol Reviewable {
     func runReview(project: LicoreProject, repository: Repository, pullRequest: PullRequest, req: Request)
 }

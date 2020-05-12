@@ -8,9 +8,10 @@
 import Vapor
 import SwiftLintFramework
 
+//A wrapper class around SwiftLint's swift interface.
 public class SwiftLint {
     
-    func getFilePaths(at shortHash: String) -> [String] {
+    public func getFilePaths(at shortHash: String) -> [String] {
         let fileManager = FileManager()
         let dirs = DirectoryConfiguration.self
         let workDirPath = dirs.detect().workingDirectory
@@ -28,7 +29,7 @@ public class SwiftLint {
         return filePaths
     }
     
-    func createSwiftLintFile(for paths: [String]) -> [SwiftLintFile] {
+    public func createSwiftLintFile(for paths: [String]) -> [SwiftLintFile] {
         var files: [SwiftLintFile] = []
         
         for path in paths {
@@ -39,7 +40,7 @@ public class SwiftLint {
         return files
     }
     
-    func configFileExists(at shortHash: String) -> Bool {
+    public func configFileExists(at shortHash: String) -> Bool {
         let fileManager = FileManager()
         let dirs = DirectoryConfiguration.self
         let workDirPath = dirs.detect().workingDirectory
@@ -55,7 +56,7 @@ public class SwiftLint {
         return true
     }
     
-    func runLinting(for shortHash: String, with rules: String) -> [StyleViolation] {
+    public func runLinting(for shortHash: String, with rules: String) -> [StyleViolation] {
         let storage = RuleStorage()
         
         let dirs = DirectoryConfiguration.self

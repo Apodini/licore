@@ -7,6 +7,7 @@
 
 import Vapor
 
+//An enum representing the status of a 'PullRequest'.
 public enum PullRequestStatus: String, Codable {
     case approved = "APPROVED"
     case unapproved = "UNAPPROVED"

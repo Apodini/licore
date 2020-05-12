@@ -86,7 +86,7 @@ func configure(_ app: Application) throws {
 }
 
 extension Application {
-    public static var hookURL = ""
+    static var hookURL = ""
 }
 
 extension Application {

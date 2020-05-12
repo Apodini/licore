@@ -8,6 +8,7 @@
 import Vapor
 import Fluent
 
+//A class for persisting a 'UserToken' for a parent 'LicoreUser'.
 public final class UserToken: Content, Model {
     
     public static var schema: String = "usertokens"

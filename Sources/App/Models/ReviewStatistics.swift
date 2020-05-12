@@ -8,6 +8,8 @@
 import Vapor
 import Fluent
 
+//A persistable class holding the 'violations' from a review job.
+//It has a parent relation to a 'Developer'.
 public final class ReviewStatistics: Content, Model {
     
     public static var schema: String = "reviewstatistics"
@@ -16,10 +18,10 @@ public final class ReviewStatistics: Content, Model {
     public var id: Int?
     
     @Field(key: "violations")
-    var violations: [String: Int]
+    public var violations: [String: Int]
     
     @Parent(key: "developer_id")
-    var developer: Developer
+    public var developer: Developer
     
     public init() { }
     

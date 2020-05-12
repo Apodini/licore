@@ -9,6 +9,8 @@ import Vapor
 import Queues
 import Fluent
 
+//A 'ScheduledJob' getting open pull requests from developers from the remote source control management system.
+//For every developer having a pull request open longer than one day, it sends a reminder message to the respective developer via Slack.
 public struct SlackReminderJob: ScheduledJob {
     
     let req: Request

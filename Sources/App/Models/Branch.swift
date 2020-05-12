@@ -8,6 +8,7 @@
 import Vapor
 import Fluent
 
+//LI.CO.RE's representation of a 'Branch' defining a 'schema' for the persistence layer.
 public final class Branch: Model, Content {
     
     public static var schema: String = "branches"
@@ -16,13 +17,13 @@ public final class Branch: Model, Content {
     public var id: Int?
     
     @Field(key: "creation_date")
-    var creationDate: Double
+    public var creationDate: Double
     
     @Field(key: "ref_id")
-    var refId: String
+    public var refId: String
     
     @Parent(key: "repository_id")
-    var repository: Repository
+    public var repository: Repository
     
     public init() { }
     
