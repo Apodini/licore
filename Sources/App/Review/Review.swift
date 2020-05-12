@@ -8,7 +8,7 @@
 import Vapor
 import SwiftLintFramework
 
-class Review {
+public class Review {
     
     let review: Reviewable
     

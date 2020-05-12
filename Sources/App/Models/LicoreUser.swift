@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-final class LicoreUser: Content, Model, ModelSessionAuthenticatable {
+public final class LicoreUser: Content, Model, ModelSessionAuthenticatable {
     
     static var schema: String = "users"
     

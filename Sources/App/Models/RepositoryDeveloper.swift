@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-final class RepositoryDeveloper: Model {
+public final class RepositoryDeveloper: Model {
     
     static let schema: String = "repository_developer"
     

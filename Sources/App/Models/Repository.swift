@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-final class Repository: Model, Content {
+public final class Repository: Model, Content {
     
     typealias IDValue = Int
     

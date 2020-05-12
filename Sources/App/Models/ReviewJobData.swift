@@ -14,7 +14,7 @@ public enum JobStatus: String, Codable {
     case failed = "Failed"
 }
 
-final class ReviewJobData: Content, Model {
+public final class ReviewJobData: Content, Model {
     
     static var schema: String = "reviewjobs"
     

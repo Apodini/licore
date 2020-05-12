@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-final class Reviewer: Content, Model {
+public final class Reviewer: Content, Model {
     
     static var schema: String = "reviewers"
     

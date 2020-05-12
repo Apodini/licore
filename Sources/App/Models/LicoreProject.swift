@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-final class LicoreProject: Model, Content {
+public final class LicoreProject: Model, Content {
     
     static var schema: String = "projects"
     

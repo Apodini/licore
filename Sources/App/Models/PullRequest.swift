@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-final class PullRequest: Model, Content {
+public final class PullRequest: Model, Content {
     
     static var schema: String = "pullrequests"
     

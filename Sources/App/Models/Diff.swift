@@ -7,7 +7,7 @@
 
 import Vapor
 
-final class Diff: Content {
+public final class Diff: Content {
     
     var fromRef: String
     var toRef: String

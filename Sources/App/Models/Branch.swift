@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-final class Branch: Model, Content {
+public final class Branch: Model, Content {
     
     static var schema: String = "branches"
     

@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-final class LicoreConfig: Model, Content {
+public final class LicoreConfig: Model, Content {
     
     static var schema: String = "configs"
     

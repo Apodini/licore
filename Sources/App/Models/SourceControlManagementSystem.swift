@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-final class SourceControlManagementSystem: Model, Content {
+public final class SourceControlManagementSystem: Model, Content {
     
     static var schema: String = "scmsystems"
     
