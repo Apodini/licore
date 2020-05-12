@@ -7,7 +7,7 @@
 
 import Vapor
 
-struct SourceControlService {
+public struct SourceControlService {
 
     let service: SourceControlServable
     

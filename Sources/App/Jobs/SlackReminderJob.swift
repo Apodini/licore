@@ -9,7 +9,7 @@ import Vapor
 import Queues
 import Fluent
 
-struct SlackReminderJob: ScheduledJob {
+public struct SlackReminderJob: ScheduledJob {
     
     let req: Request
     

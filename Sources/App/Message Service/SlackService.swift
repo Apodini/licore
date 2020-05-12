@@ -8,7 +8,7 @@
 import Foundation
 import Vapor
 
-class SlackService {
+public class SlackService {
     
     func getSlackUser(req: Request, by email: String, token: String) -> EventLoopFuture<SlackUser?> {
         logger.info("Getting User ID by E-Mail: \(email)")

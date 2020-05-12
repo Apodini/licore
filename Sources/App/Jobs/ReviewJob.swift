@@ -9,7 +9,7 @@ import Vapor
 import Queues
 import Fluent
 
-struct ReviewJob: Job {
+public struct ReviewJob: Job {
     
     let req: Request
     

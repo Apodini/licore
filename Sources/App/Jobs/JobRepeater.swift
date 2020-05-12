@@ -8,7 +8,7 @@
 import Vapor
 import Queues
 
-struct JobRepeater: ScheduledJob {
+public struct JobRepeater: ScheduledJob {
     
     let app: Application
     
