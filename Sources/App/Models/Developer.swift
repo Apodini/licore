@@ -8,6 +8,9 @@
 import Vapor
 import Fluent
 
+//Representation of a 'Developer' defining a 'schema' for the persistence layer.
+//This class contains the developer's 'slug', 'name', and 'email'.
+//It has a siblings relation to 'Repository' and a children relation to 'ReviewStatistics'.
 public final class Developer: Content, Model {
     
     public static var schema: String = "developers"
@@ -16,19 +19,19 @@ public final class Developer: Content, Model {
     public var id: Int?
     
     @Field(key: "slug")
-    var slug: String
+    public var slug: String
     
     @Field(key: "name")
-    var name: String
+    public var name: String
     
     @Field(key: "email")
-    var email: String
+    public var email: String
     
     @Siblings(through: RepositoryDeveloper.self, from: \.$developer, to: \.$repository)
-    var repository: [Repository]
+    public var repository: [Repository]
     
     @Children(for: \.$developer)
-    var reviewStatistics: [ReviewStatistics]
+    public var reviewStatistics: [ReviewStatistics]
     
     public init() { }
     

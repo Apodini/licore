@@ -8,6 +8,8 @@
 import Vapor
 import Fluent
 
+//LI.CO.RE's persistable user class which is used for authentication.
+//This class contains the user's 'name', and 'email'.
 public final class LicoreUser: Content, Model, ModelSessionAuthenticatable {
     
     public static var schema: String = "users"
@@ -16,10 +18,10 @@ public final class LicoreUser: Content, Model, ModelSessionAuthenticatable {
     public var id: Int?
     
     @Field(key: "name")
-    var name: String
+    public var name: String
     
     @Field(key: "email")
-    var email: String
+    public var email: String
     
     @Field(key: "password_hash")
     var passwordHash: String

@@ -7,6 +7,7 @@
 
 import Vapor
 
+//A common interface for converting objects from external sources into a LI.CO.RE model.
 public protocol LicoreModelConvertable {
     associatedtype ReturnLicoreModel
     func createLicoreModel() -> ReturnLicoreModel

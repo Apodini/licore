@@ -7,6 +7,7 @@
 
 import Vapor
 
+//LI.CO.RE's representation of a 'Comment'.
 public final class Task: Content {
     
     var id: Int?

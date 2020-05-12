@@ -8,6 +8,9 @@
 import Vapor
 import Fluent
 
+//LI.CO.RE's project class defining a 'schema' for the persistence layer.
+//This class contains the project's 'name', 'key', and 'rules', and the 'slackToken'.
+//It has a siblings relation to 'Reviewer' and a children relation to 'Repostiory'.
 public final class LicoreProject: Model, Content {
     
     public static var schema: String = "projects"
@@ -16,25 +19,25 @@ public final class LicoreProject: Model, Content {
     public var id: Int?
     
     @Field(key: "name")
-    var name: String
+    public var name: String
     
     @Field(key: "key")
-    var key: String
+    public var key: String
     
     @Field(key: "rules")
-    var rules: String
+    public var rules: String
     
     @Field(key: "slack_token")
-    var slackToken: String?
+    public var slackToken: String?
     
     @Parent(key: "scmsystems_id")
-    var scmSystem: SourceControlManagementSystem
+    public var scmSystem: SourceControlManagementSystem
     
     @Children(for: \.$project)
-    var repositories: [Repository]
+    public var repositories: [Repository]
     
     @Siblings(through: ProjectReviewer.self, from: \.$project, to: \.$reviewer)
-    var reviewers: [Reviewer]
+    public var reviewers: [Reviewer]
     
     public init() { }
     

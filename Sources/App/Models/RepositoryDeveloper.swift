@@ -8,6 +8,7 @@
 import Vapor
 import Fluent
 
+//This class holds the siblings relation between a 'Repository' and 'Developer'.
 public final class RepositoryDeveloper: Model {
     
     public static let schema: String = "repository_developer"
@@ -16,10 +17,10 @@ public final class RepositoryDeveloper: Model {
     public var id: Int?
     
     @Parent(key: "repository_id")
-    var repository: Repository
+    public var repository: Repository
     
     @Parent(key: "developer_id")
-    var developer: Developer
+    public var developer: Developer
     
     public init() {}
     

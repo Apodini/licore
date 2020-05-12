@@ -8,6 +8,9 @@
 import Vapor
 import Fluent
 
+//Representation of a 'Reviewer' defining a 'schema' for the persistence layer.
+//This class contains the developer's 'slug', 'name', and 'email'.
+//It has two siblings relations to 'LicoreProject' and to 'Repository'.
 public final class Reviewer: Content, Model {
     
     public static var schema: String = "reviewers"
@@ -16,19 +19,19 @@ public final class Reviewer: Content, Model {
     public var id: Int?
     
     @Field(key: "slug")
-    var slug: String
+    public var slug: String
     
     @Field(key: "name")
-    var name: String
+    public var name: String
     
     @Field(key: "email")
-    var email: String
+    public var email: String
 
     @Siblings(through: ProjectReviewer.self, from: \.$reviewer, to: \.$project)
-    var projects: [LicoreProject]
+    public var projects: [LicoreProject]
     
     @Siblings(through: RepositoryReviewer.self, from: \.$reviewer, to: \.$repository)
-    var repositories: [Repository]
+    public var repositories: [Repository]
     
     public init() { }
     

@@ -7,6 +7,7 @@
 
 import Vapor
 
+//This service interacts with the respective 'SourceControlMangementSystem' specified in the 'LicoreProject'.
 public struct SourceControlService {
 
     let service: SourceControlServable

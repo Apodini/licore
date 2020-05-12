@@ -8,6 +8,7 @@
 import Vapor
 import SwiftLintFramework
 
+//A class capable of running a 'Reviewable' calling its 'runReview' method.
 public class Review {
     
     let review: Reviewable

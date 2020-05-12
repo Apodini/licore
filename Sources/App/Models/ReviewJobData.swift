@@ -8,12 +8,15 @@
 import Vapor
 import Fluent
 
+//An enum representing the status of a 'ReviewJob'.
 public enum JobStatus: String, Codable {
     case new = "New"
     case done = "Done"
     case failed = "Failed"
 }
 
+//A persistable class holding a 'JobStatus'.
+//It has a parent relation to a 'PullRequest'.
 public final class ReviewJobData: Content, Model {
     
     public static var schema: String = "reviewjobs"
@@ -22,10 +25,10 @@ public final class ReviewJobData: Content, Model {
     public var id: Int?
     
     @Field(key: "status")
-    var status: JobStatus
+    public var status: JobStatus
     
     @Parent(key: "pullrequest_id")
-    var pullRequest: PullRequest
+    public var pullRequest: PullRequest
     
     public init() { }
     

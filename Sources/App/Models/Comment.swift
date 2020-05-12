@@ -7,22 +7,25 @@
 
 import Vapor
 
+//Defines the type of the 'Comment' posted by LI.CO.RE.
 public enum CommentType: String, Codable {
     case warning
     case error
     case message
 }
 
+//LI.CO.RE's representation of a 'Comment'.
+//It contains all information neccessary to post it as an inline 'Comment' to the respective source control management system.
 public final class Comment: Content {
     
-    var id: Int?
-    var version: Int?
-    var line: Int?
-    var lineType: String?
-    var ruleDescription: String
-    var content: String
-    var path: String?
-    var type: CommentType?
+    public var id: Int?
+    public var version: Int?
+    public var line: Int?
+    public var lineType: String?
+    public var ruleDescription: String
+    public var content: String
+    public var path: String?
+    public var type: CommentType?
     
     init(id: Int?, version: Int? = nil, line: Int?, lineType: String?, ruleDescription: String, content: String, path: String?, type: CommentType?) {
         self.id = id

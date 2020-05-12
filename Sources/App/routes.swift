@@ -31,7 +31,7 @@ func routes(_ app: Application) throws {
 
 extension RoutesBuilder {
     @discardableResult
-    public func upload<Response>(
+    func upload<Response>(
         _ path: PathComponent...,
         use closure: @escaping (Request) throws -> Response
     ) -> Route
@@ -40,7 +40,7 @@ extension RoutesBuilder {
     }
     
     @discardableResult
-    public func upload<Response>(
+    func upload<Response>(
         _ path: [PathComponent],
         use closure: @escaping (Request) throws -> Response
     ) -> Route
