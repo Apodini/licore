@@ -100,7 +100,7 @@ class GitHubReview: Reviewable {
                                                                 req: req)
                     }
                     
-                    if generalComments.count == 0 && inlineComments.count == 0 {
+                    if generalComments.isEmpty && inlineComments.isEmpty {
                         logger.info("Approving Pull Request...")
                         sourceControlService.approvePullRequest(repositoryName: repository.name, pullRequest: pullRequest, req: req)
                     } else {
