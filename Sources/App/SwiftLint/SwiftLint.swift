@@ -8,7 +8,7 @@
 import Vapor
 import SwiftLintFramework
 
-//A wrapper class around SwiftLint's swift interface.
+///A wrapper class around SwiftLint's swift interface.
 public class SwiftLint {
     
     public func getFilePaths(at shortHash: String) -> [String] {

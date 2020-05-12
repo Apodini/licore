@@ -7,7 +7,7 @@
 
 import Vapor
 
-//This protocol specifies a common interface for communicating to a remote source control management system.
+///This protocol specifies a common interface for communicating to a remote source control management system.
 public protocol SourceControlServable {
     func getDevelopers(repositoryName: String, req: Request) -> EventLoopFuture<[Developer]>
     func getRepositories(req: Request) -> EventLoopFuture<[Repository]>

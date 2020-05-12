@@ -7,7 +7,7 @@
 
 import Vapor
 
-//LI.CO.RE's representation of a 'Comment'.
+///LI.CO.RE's representation of a 'Comment'.
 public final class Diff: Content {
     
     var fromRef: String

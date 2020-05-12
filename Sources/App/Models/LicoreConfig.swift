@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-//This class persists LI.CO.RE's 'hookURL' configuration in the 'schema' 'configs'.
+///This class persists LI.CO.RE's 'hookURL' configuration in the 'schema' 'configs'.
 public final class LicoreConfig: Model, Content {
     
     public static var schema: String = "configs"
