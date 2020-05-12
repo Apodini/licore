@@ -13,7 +13,7 @@ public enum CommentType: String, Codable {
     case message
 }
 
-final class Comment: Content {
+public final class Comment: Content {
     
     var id: Int?
     var version: Int?

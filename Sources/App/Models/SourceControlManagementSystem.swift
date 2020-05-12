@@ -8,12 +8,12 @@
 import Vapor
 import Fluent
 
-final class SourceControlManagementSystem: Model, Content {
+public final class SourceControlManagementSystem: Model, Content {
     
-    static var schema: String = "scmsystems"
+    public static var schema: String = "scmsystems"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "name")
     var name: String
@@ -30,7 +30,7 @@ final class SourceControlManagementSystem: Model, Content {
     @Children(for: \.$scmSystem)
     var projects: [LicoreProject]
     
-    init() { }
+    public init() { }
     
     init(id: Int? = nil, name: String, scmType: SourceControlType, scmURL: String, token: String) {
         self.id = id

@@ -7,7 +7,7 @@
 
 import Vapor
 
-final class Task: Content {
+public final class Task: Content {
     
     var id: Int?
     var description: String

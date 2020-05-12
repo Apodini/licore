@@ -85,7 +85,7 @@ class BitBucketReview: Reviewable {
                                                              req: req)
                         }
                         
-                        if inlineComments.count == 0 {
+                        if inlineComments.isEmpty {
                             logger.info("Approving Pull Request...")
                             sourceControlService.approvePullRequest(repositoryName: repository.name,
                                                                     pullRequest: pullRequest,

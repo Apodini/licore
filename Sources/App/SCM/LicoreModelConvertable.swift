@@ -7,7 +7,7 @@
 
 import Vapor
 
-protocol LicoreModelConvertable {
+public protocol LicoreModelConvertable {
     associatedtype ReturnLicoreModel
     func createLicoreModel() -> ReturnLicoreModel
 }

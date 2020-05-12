@@ -8,12 +8,12 @@
 import Vapor
 import Fluent
 
-final class Branch: Model, Content {
+public final class Branch: Model, Content {
     
-    static var schema: String = "branches"
+    public static var schema: String = "branches"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "creation_date")
     var creationDate: Double
@@ -24,7 +24,7 @@ final class Branch: Model, Content {
     @Parent(key: "repository_id")
     var repository: Repository
     
-    init() { }
+    public init() { }
     
     init(id: Int? = nil, creationDate: Double, refId: String, repositoryID: Repository.IDValue) {
         self.id = id

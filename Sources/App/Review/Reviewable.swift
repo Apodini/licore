@@ -8,7 +8,7 @@
 import Vapor
 import SwiftLintFramework
 
-protocol Reviewable {
+public protocol Reviewable {
     func runReview(project: LicoreProject, repository: Repository, pullRequest: PullRequest, req: Request)
 }
 

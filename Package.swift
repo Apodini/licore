@@ -8,7 +8,7 @@ let package = Package(
     ],
     products: [
         .executable(name: "Run", targets: ["Run"]),
-        .library(name: "App", targets: ["App"]),
+        .library(name: "App", targets: ["App"])
     ],
     dependencies: [
         // 💧 A server-side Swift web framework.

@@ -8,12 +8,12 @@
 import Vapor
 import Fluent
 
-final class Developer: Content, Model {
+public final class Developer: Content, Model {
     
-    static var schema: String = "developers"
+    public static var schema: String = "developers"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "slug")
     var slug: String
@@ -30,7 +30,7 @@ final class Developer: Content, Model {
     @Children(for: \.$developer)
     var reviewStatistics: [ReviewStatistics]
     
-    init() { }
+    public init() { }
     
     init(id: Int? = nil, slug: String, name: String, email: String) {
         self.id = id

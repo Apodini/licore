@@ -7,7 +7,7 @@
 
 import Vapor
 
-protocol SourceControlServable {
+public protocol SourceControlServable {
     func getDevelopers(repositoryName: String, req: Request) -> EventLoopFuture<[Developer]>
     func getRepositories(req: Request) -> EventLoopFuture<[Repository]>
     func getComments(repositoryName: String, pullRequestId: Int, req: Request) -> EventLoopFuture<[Comment]>

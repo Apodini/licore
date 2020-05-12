@@ -9,7 +9,6 @@ import Vapor
 import Leaf
 
 struct ReposController: RouteCollection {
-    
     func boot(routes: RoutesBuilder) throws {
         routes.get("repos", use: allRepositories)
         routes.get("repos", ":repoID", use: getRepositoryOverview)
@@ -34,8 +33,12 @@ struct ReposController: RouteCollection {
             return req.view.render("login")
         }
         
-        guard let repositoryParameter = req.parameters.get("repoID") else { return req.view.render("index") }
-        guard let repositoryId = Int(repositoryParameter) else { return req.view.render("index") }
+        guard let repositoryParameter = req.parameters.get("repoID") else {
+            return req.view.render("index")
+        }
+        guard let repositoryId = Int(repositoryParameter) else {
+            return req.view.render("index")
+        }
         
         var openingTimes: [Double] = []
         var iterations: [Double] = []
@@ -44,11 +47,15 @@ struct ReposController: RouteCollection {
         
         return RepositoryDeveloper.query(on: req.db).with(\.$repository).with(\.$developer).all().flatMap { repositoryDevelopers in
             let repositoryDeveloper = repositoryDevelopers.filter { $0.$repository.id == repositoryId }
-            guard let developer = repositoryDeveloper.map({ $0.developer }).first else { return req.view.render("index") }
-            guard let repository = repositoryDeveloper.map({ $0.repository }).first else { return req.view.render("index") }
+            guard let developer = repositoryDeveloper.map({ $0.developer }).first else {
+                return req.view.render("index")
+            }
+            guard let repository = repositoryDeveloper.map({ $0.repository }).first else {
+                return req.view.render("index")
+            }
             
             return Branch.query(on: req.db).with(\.$repository).all().flatMap { branches in
-                let branches = branches.filter { $0.$repository.id ==  repository.id }
+                let branches = branches.filter { $0.$repository.id == repository.id }
                 
                 return PullRequest.query(on: req.db).all().flatMap { pullRequests in
                     branches.forEach { branch in
@@ -58,7 +65,7 @@ struct ReposController: RouteCollection {
                         iterations.append(Double(iteration))
                         
                         if let firstPullRequest = pullRequests.first {
-                            let distance = firstPullRequest.creationDate/1000 - branch.creationDate
+                            let distance = firstPullRequest.creationDate / 1000 - branch.creationDate
                             print(distance)
                             
                             openingTimes.append(distance)
@@ -80,7 +87,7 @@ struct ReposController: RouteCollection {
                                 approvalDistances.append($1.date - $0.date)
                             }
                             
-                            if approvalDistances.count != 0 {
+                            if !approvalDistances.isEmpty {
                                 averageResolvingTime = approvalDistances.reduce(0, +) / Double(approvalDistances.count)
                             }
                         }
@@ -88,7 +95,7 @@ struct ReposController: RouteCollection {
                         return ReviewStatistics.query(on: req.db).with(\.$developer).all().flatMap { statistics in
                             let statistics = statistics.filter { $0.developer.id == developer.id }
                             
-                            if statistics.count == 0 {
+                            if statistics.isEmpty {
                                 let context = RepositoryOverviewContext(repository: repository,
                                                                         developer: developer,
                                                                         averageResolvingTime: "n/a",
@@ -97,9 +104,8 @@ struct ReposController: RouteCollection {
                                                                         averageViolations: "n/a")
                                 
                                 return req.view.render("repositoryOverview", context)
-                                
                             } else {
-                                let averageViolations =  statistics.compactMap { $0.sumViolations }.reduce(0, +) / statistics.count
+                                let averageViolations = statistics.compactMap { $0.sumViolations }.reduce(0, +) / statistics.count
                                 let resolvingTime = averageResolvingTime.isNaN ? 0 : averageResolvingTime
                                 let iterations = averageIterations.isNaN ? 0 : averageIterations
                                 let timeUntilOpening = averageTimeUntilOpening.isNaN ? 0 : averageTimeUntilOpening
@@ -135,22 +141,30 @@ struct ReposController: RouteCollection {
             return req.view.render("login")
         }
         
-        guard let repositoryParameter = req.parameters.get("repoID") else { return req.view.render("index") }
-        guard let repositoryId = Int(repositoryParameter) else { return req.view.render("index") }
+        guard let repositoryParameter = req.parameters.get("repoID") else {
+            return req.view.render("index")
+        }
+        guard let repositoryId = Int(repositoryParameter) else {
+            return req.view.render("index")
+        }
         
         var contexts: [BranchContext] = []
         
         return RepositoryDeveloper.query(on: req.db).with(\.$repository).all().flatMap { repositoryDevelopers in
             let repositoryDeveloper = repositoryDevelopers.filter { $0.$repository.id == repositoryId }
-            guard let repository = repositoryDeveloper.map({ $0.repository }).first else { return req.view.render("index") }
+            guard let repository = repositoryDeveloper.map({ $0.repository }).first else {
+                return req.view.render("index")
+            }
             
             return Branch.query(on: req.db).with(\.$repository).all().flatMap { branches in
-                let branches = branches.filter { $0.$repository.id ==  repository.id }
+                let branches = branches.filter { $0.$repository.id == repository.id }
                 
                 return PullRequest.query(on: req.db).all().flatMap { pullRequests in
                     branches.forEach { branch in
                         
-                        guard let branchID = branch.id else { return }
+                        guard let branchID = branch.id else {
+                            return
+                        }
                         let iteration = pullRequests.filter { branch.refId == $0.refId }.count
                         
                         contexts.append(BranchContext(id: branchID,
@@ -169,21 +183,29 @@ struct ReposController: RouteCollection {
             return req.view.render("login")
         }
         
-        guard let repositoryParameter = req.parameters.get("repoID") else { return req.view.render("index") }
-        guard let repositoryId = Int(repositoryParameter) else { return req.view.render("index") }
+        guard let repositoryParameter = req.parameters.get("repoID") else {
+            return req.view.render("index")
+        }
+        guard let repositoryId = Int(repositoryParameter) else {
+            return req.view.render("index")
+        }
         
         var contexts: [ViolationContext] = []
         
         return RepositoryDeveloper.query(on: req.db).with(\.$repository).with(\.$developer).all().flatMap { repositoryDevelopers in
             let developers = repositoryDevelopers.filter { $0.$repository.id == repositoryId }.map { $0.developer }
-            guard let developer = developers.first else { return req.view.render("index") }
+            guard let developer = developers.first else {
+                return req.view.render("index")
+            }
             
             return ReviewStatistics.query(on: req.db).with(\.$developer).all().flatMap { statistics in
                 let statistics = statistics.filter { $0.developer.id == developer.id }
                 
                 let violations = statistics.map { $0.violations }
                 let keys = violations.map { $0.keys.compactMap { $0 } }.first
-                guard let keysArray = keys else { return req.view.render("index") }
+                guard let keysArray = keys else {
+                    return req.view.render("index")
+                }
                 
                 keysArray.map { key in
                     let violation = violations.filter { $0.contains { $0.key == key.description } }
@@ -197,7 +219,6 @@ struct ReposController: RouteCollection {
             }
         }
     }
-    
 }
 
 struct AllRepositoriesContext: Encodable {
@@ -237,14 +258,14 @@ struct BranchContext: Content {
 
 extension Int {
     var seconds: Int {
-        return self % 60
+        self % 60
     }
     
     var minutes: Int {
-        return (self % 3600) / 60
+        (self % 3600) / 60
     }
     
     var hours: Int {
-        return (self % 86400) / 3600
+        (self % 86400) / 3600
     }
 }

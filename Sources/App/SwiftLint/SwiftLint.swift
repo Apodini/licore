@@ -8,7 +8,7 @@
 import Vapor
 import SwiftLintFramework
 
-class SwiftLint {
+public class SwiftLint {
     
     func getFilePaths(at shortHash: String) -> [String] {
         let fileManager = FileManager()

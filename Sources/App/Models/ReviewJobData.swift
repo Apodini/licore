@@ -14,12 +14,12 @@ public enum JobStatus: String, Codable {
     case failed = "Failed"
 }
 
-final class ReviewJobData: Content, Model {
+public final class ReviewJobData: Content, Model {
     
-    static var schema: String = "reviewjobs"
+    public static var schema: String = "reviewjobs"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "status")
     var status: JobStatus
@@ -27,7 +27,7 @@ final class ReviewJobData: Content, Model {
     @Parent(key: "pullrequest_id")
     var pullRequest: PullRequest
     
-    init() { }
+    public init() { }
     
     public init(id: Int? = nil, status: JobStatus = .new, pullRequestID: PullRequest.IDValue) {
         self.id = id

@@ -8,12 +8,12 @@
 import Vapor
 import Fluent
 
-final class LicoreUser: Content, Model, ModelSessionAuthenticatable {
+public final class LicoreUser: Content, Model, ModelSessionAuthenticatable {
     
-    static var schema: String = "users"
+    public static var schema: String = "users"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "name")
     var name: String
@@ -28,7 +28,7 @@ final class LicoreUser: Content, Model, ModelSessionAuthenticatable {
         try .init(token: [UInt8].random(count: 16).base64, userID: self.requireID())
     }
     
-    init() { }
+    public init() { }
     
     init(id: Int? = nil, name: String, email: String, passwordHash: String) {
         self.id = id
@@ -40,10 +40,10 @@ final class LicoreUser: Content, Model, ModelSessionAuthenticatable {
 }
 
 extension LicoreUser: ModelAuthenticatable {
-    static let usernameKey = \LicoreUser.$name
-    static let passwordHashKey = \LicoreUser.$passwordHash
+    public static let usernameKey = \LicoreUser.$name
+    public static let passwordHashKey = \LicoreUser.$passwordHash
 
-    func verify(password: String) throws -> Bool {
+    public func verify(password: String) throws -> Bool {
         try Bcrypt.verify(password, created: self.passwordHash)
     }
 }

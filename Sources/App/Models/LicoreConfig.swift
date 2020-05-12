@@ -8,17 +8,17 @@
 import Vapor
 import Fluent
 
-final class LicoreConfig: Model, Content {
+public final class LicoreConfig: Model, Content {
     
-    static var schema: String = "configs"
+    public static var schema: String = "configs"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "hook_url")
     var hookURL: String
     
-    init() { }
+    public init() { }
     
     init(id: Int? = nil, hookURL: String) {
         self.id = id

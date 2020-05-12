@@ -8,12 +8,12 @@
 import Vapor
 import Fluent
 
-final class UserToken: Content, Model {
+public final class UserToken: Content, Model {
     
-    static var schema: String = "usertokens"
+    public static var schema: String = "usertokens"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "token")
     var token: String
@@ -21,7 +21,7 @@ final class UserToken: Content, Model {
     @Parent(key: "user_id")
     var user: LicoreUser
     
-    init() { }
+    public init() { }
     
     init(id: Int? = nil, token: String, userID: LicoreUser.IDValue) {
         self.id = id
@@ -32,12 +32,12 @@ final class UserToken: Content, Model {
 }
 
 extension UserToken: ModelUserToken {
-    var isValid: Bool {
+    public var isValid: Bool {
         return true
     }
     
-    static let valueKey = \UserToken.$token
-    static let userKey = \UserToken.$user
+    public static let valueKey = \UserToken.$token
+    public static let userKey = \UserToken.$user
 }
 
 extension UserToken {

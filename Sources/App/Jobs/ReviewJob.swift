@@ -9,11 +9,11 @@ import Vapor
 import Queues
 import Fluent
 
-struct ReviewJob: Job {
+public struct ReviewJob: Job {
     
     let req: Request
     
-    func dequeue(_ context: QueueContext, _ payload: ReviewJobData) -> EventLoopFuture<Void> {
+    public func dequeue(_ context: QueueContext, _ payload: ReviewJobData) -> EventLoopFuture<Void> {
         logger.info("Dequeueing Review Job")
         
         guard let reviewJobID = payload.id else {
@@ -52,7 +52,7 @@ struct ReviewJob: Job {
         return context.eventLoop.future()
     }
     
-    func error(_ context: QueueContext, _ error: Error, _ payload: ReviewJobData) -> EventLoopFuture<Void> {
+    public func error(_ context: QueueContext, _ error: Error, _ payload: ReviewJobData) -> EventLoopFuture<Void> {
         return context.eventLoop.makeSucceededFuture(())
     }
 }
