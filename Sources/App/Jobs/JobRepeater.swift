@@ -8,7 +8,7 @@
 import Vapor
 import Queues
 
-//A 'ScheduledJob' that runs a review every second when a review job is in the queue.
+///A 'ScheduledJob' that runs a review every second when a review job is in the queue.
 public struct JobRepeater: ScheduledJob {
     
     let app: Application

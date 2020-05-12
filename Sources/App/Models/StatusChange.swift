@@ -8,9 +8,9 @@
 import Vapor
 import Fluent
 
-//Represents the status change of a 'PullRequest' defining a 'schema' for the persistence layer.
-//This class contains the 'previousStatus', the 'newStatus' and the 'date'.
-//It has a a parent relation to 'PullRequest'.
+///Represents the status change of a 'PullRequest' defining a 'schema' for the persistence layer.
+///This class contains the 'previousStatus', the 'newStatus' and the 'date'.
+///It has a a parent relation to 'PullRequest'.
 public final class StatusChange: Content, Model {
     
     public static var schema: String = "statuschanges"

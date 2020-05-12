@@ -8,11 +8,11 @@
 import Vapor
 import Fluent
 
-//LI.CO.RE's representation of a 'Repository' defining a 'schema' for the persistence layer.
-//This class contains the project's 'scmId', 'name'.
-//The 'scmId' is the id value of the pull request at the remote source control management system.
-//It has a parent relation to 'LicoreProject' and two children relations to 'Branch' and 'PullRequest'.
-//A 'Repository' has also two siblings relations to 'Developer' and to 'Reviewer'.
+///LI.CO.RE's representation of a 'Repository' defining a 'schema' for the persistence layer.
+///This class contains the project's 'scmId', 'name'.
+///The 'scmId' is the id value of the pull request at the remote source control management system.
+///It has a parent relation to 'LicoreProject' and two children relations to 'Branch' and 'PullRequest'.
+///A 'Repository' has also two siblings relations to 'Developer' and to 'Reviewer'.
 public final class Repository: Model, Content {
     
     public typealias IDValue = Int

@@ -8,8 +8,8 @@
 import Vapor
 import Fluent
 
-//A persistable class holding the 'violations' from a review job.
-//It has a parent relation to a 'Developer'.
+///A persistable class holding the 'violations' from a review job.
+///It has a parent relation to a 'Developer'.
 public final class ReviewStatistics: Content, Model {
     
     public static var schema: String = "reviewstatistics"

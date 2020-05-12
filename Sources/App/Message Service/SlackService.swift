@@ -8,8 +8,8 @@
 import Foundation
 import Vapor
 
-//The 'SlackService' can call 'getSlackUser' to retrieve the Slack User ID by looking it up by email.
-//It can post a direct message calling 'postDirectMessage'.
+///The 'SlackService' can call 'getSlackUser' to retrieve the Slack User ID by looking it up by email.
+///It can post a direct message calling 'postDirectMessage'.
 public class SlackService {
     
     func getSlackUser(req: Request, by email: String, token: String) -> EventLoopFuture<SlackUser?> {
