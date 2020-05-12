@@ -1,4 +1,6 @@
-# Apodini SwiftLint file Apodini
+# SwiftLint file LS1 TUM
+# Created by Paul Schmiedmayer on 08/16/18.
+# Copyright © 2020 Paul Schmiedmayer. All rights reserved.
   
 # The whitelist_rules configuration also includes rules that are enabled by default to provide a good overview of all rules.
 whitelist_rules:
@@ -333,8 +335,8 @@ file_length: # Files should not span too many lines.
   - 500 # error - default: 1000
 
 function_body_length: # Functions bodies should not span too many lines.
-  - 50 # warning - default: 40
-  - 50 # error - default: 100
+  - 100 # warning - default: 40
+  - 200 # error - default: 100
 
 function_parameter_count: # Number of function parameters should be low.
   - 5 # warning - default: 5
@@ -368,8 +370,8 @@ trailing_closure:
   only_single_muted_parameter: true
 
 type_body_length: # Type bodies should not span too many lines.
-  - 250 # warning - default: 200
-  - 250 # error - default: 200
+  - 350 # warning - default: 200
+  - 400 # error - default: 200
 
 type_name:
   excluded: # excluded names
@@ -384,3 +386,8 @@ unused_optional_binding:
 
 vertical_whitespace: # Limit vertical whitespace to a single empty line.
   max_empty_lines: 2 # warning - default: 1
+
+cyclomatic_complexity:
+  warning: 30
+  error: 40
+  ignores_case_statements: true
