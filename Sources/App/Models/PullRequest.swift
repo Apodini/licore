@@ -10,10 +10,10 @@ import Fluent
 
 public final class PullRequest: Model, Content {
     
-    static var schema: String = "pullrequests"
+    public static var schema: String = "pullrequests"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "scm_id")
     var scmId: Int
@@ -33,7 +33,7 @@ public final class PullRequest: Model, Content {
     @Children(for: \.$pullRequest)
     var statusChanges: [StatusChange]
     
-    init() { }
+    public init() { }
     
     init(id: Int? = nil, scmId: Int, creationDate: Double, latestCommit: String, refId: String?, repositoryID: Repository.IDValue) {
         self.id = id

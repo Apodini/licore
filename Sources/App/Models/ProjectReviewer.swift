@@ -10,10 +10,10 @@ import Fluent
 
 public final class ProjectReviewer: Model {
     
-    static let schema: String = "project_reviewer"
+    public static let schema: String = "project_reviewer"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Parent(key: "project_id")
     var project: LicoreProject
@@ -21,7 +21,7 @@ public final class ProjectReviewer: Model {
     @Parent(key: "reviewer_id")
     var reviewer: Reviewer
     
-    init() {}
+    public init() {}
     
     init(id: Int? = nil, projectID: Int, reviewerID: Int) {
         self.$project.id = projectID

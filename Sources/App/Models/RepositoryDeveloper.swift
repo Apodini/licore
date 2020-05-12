@@ -10,10 +10,10 @@ import Fluent
 
 public final class RepositoryDeveloper: Model {
     
-    static let schema: String = "repository_developer"
+    public static let schema: String = "repository_developer"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Parent(key: "repository_id")
     var repository: Repository
@@ -21,7 +21,7 @@ public final class RepositoryDeveloper: Model {
     @Parent(key: "developer_id")
     var developer: Developer
     
-    init() {}
+    public init() {}
     
     init(id: Int? = nil, repositoryID: Int, developerID: Int) {
         self.$repository.id = repositoryID

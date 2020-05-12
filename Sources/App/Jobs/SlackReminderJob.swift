@@ -13,7 +13,7 @@ public struct SlackReminderJob: ScheduledJob {
     
     let req: Request
     
-    func run(context: QueueContext) -> EventLoopFuture<Void> {
+    public func run(context: QueueContext) -> EventLoopFuture<Void> {
         logger.info("Running Slack Reminder Job")
         
         let slackService = SlackService()

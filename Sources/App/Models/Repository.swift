@@ -10,12 +10,12 @@ import Fluent
 
 public final class Repository: Model, Content {
     
-    typealias IDValue = Int
+    public typealias IDValue = Int
     
-    static var schema: String = "repositories"
+    public static var schema: String = "repositories"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "scm_id")
     var scmId: Int
@@ -38,7 +38,7 @@ public final class Repository: Model, Content {
     @Siblings(through: RepositoryReviewer.self, from: \.$repository, to: \.$reviewer)
     var reviewers: [Reviewer]
     
-    init() { }
+    public init() { }
     
     init(id: Int? = nil, scmId: Int, name: String, projectID: LicoreProject.IDValue) {
         self.id = id
@@ -72,7 +72,7 @@ extension Repository {
 }
 
 extension Repository: Equatable {
-    static func == (lhs: Repository, rhs: Repository) -> Bool {
+    public static func == (lhs: Repository, rhs: Repository) -> Bool {
         return lhs.id == rhs.id
     }
 }

@@ -10,10 +10,10 @@ import Fluent
 
 public final class Reviewer: Content, Model {
     
-    static var schema: String = "reviewers"
+    public static var schema: String = "reviewers"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "slug")
     var slug: String
@@ -30,7 +30,7 @@ public final class Reviewer: Content, Model {
     @Siblings(through: RepositoryReviewer.self, from: \.$reviewer, to: \.$repository)
     var repositories: [Repository]
     
-    init() { }
+    public init() { }
     
     init(id: Int? = nil, slug: String, name: String, email: String) {
         self.id = id

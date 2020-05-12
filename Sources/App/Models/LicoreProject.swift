@@ -10,10 +10,10 @@ import Fluent
 
 public final class LicoreProject: Model, Content {
     
-    static var schema: String = "projects"
+    public static var schema: String = "projects"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "name")
     var name: String
@@ -36,7 +36,7 @@ public final class LicoreProject: Model, Content {
     @Siblings(through: ProjectReviewer.self, from: \.$project, to: \.$reviewer)
     var reviewers: [Reviewer]
     
-    init() { }
+    public init() { }
     
     init(id: Int? = nil, name: String, key: String, rules: String, slackToken: String, scmSystemID: SourceControlManagementSystem.IDValue) {
         self.id = id
@@ -85,7 +85,7 @@ extension LicoreProject {
 }
 
 extension LicoreProject: Equatable {
-    static func == (lhs: LicoreProject, rhs: LicoreProject) -> Bool {
+    public static func == (lhs: LicoreProject, rhs: LicoreProject) -> Bool {
         return lhs.id == rhs.id
     }
 }

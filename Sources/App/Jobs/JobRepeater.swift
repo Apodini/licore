@@ -12,7 +12,7 @@ public struct JobRepeater: ScheduledJob {
     
     let app: Application
     
-    func run(context: QueueContext) -> EventLoopFuture<Void> {
+    public func run(context: QueueContext) -> EventLoopFuture<Void> {
         app.queues.queue.worker.run()
         
         return context.eventLoop.future()

@@ -10,10 +10,10 @@ import Fluent
 
 public final class ReviewStatistics: Content, Model {
     
-    static var schema: String = "reviewstatistics"
+    public static var schema: String = "reviewstatistics"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "violations")
     var violations: [String: Int]
@@ -21,7 +21,7 @@ public final class ReviewStatistics: Content, Model {
     @Parent(key: "developer_id")
     var developer: Developer
     
-    init() { }
+    public init() { }
     
     init(id: Int? = nil, violations: [String: Int], developerID: Developer.IDValue) {
         self.id = id

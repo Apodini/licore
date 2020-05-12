@@ -10,10 +10,10 @@ import Fluent
 
 public final class StatusChange: Content, Model {
     
-    static var schema: String = "statuschanges"
+    public static var schema: String = "statuschanges"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "previous_status")
     var previousStatus: PullRequestStatus
@@ -27,7 +27,7 @@ public final class StatusChange: Content, Model {
     @Parent(key: "pullrequest_id")
     var pullRequest: PullRequest
     
-    init() { }
+    public init() { }
     
     public init(id: Int? = nil, previousStatus: PullRequestStatus, newStatus: PullRequestStatus, date: Double, pullRequestID: PullRequest.IDValue) {
         self.id = id
