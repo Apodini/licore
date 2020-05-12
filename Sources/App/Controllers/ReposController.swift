@@ -9,7 +9,6 @@ import Vapor
 import Leaf
 
 struct ReposController: RouteCollection {
-    
     func boot(routes: RoutesBuilder) throws {
         routes.get("repos", use: allRepositories)
         routes.get("repos", ":repoID", use: getRepositoryOverview)
@@ -56,7 +55,7 @@ struct ReposController: RouteCollection {
             }
             
             return Branch.query(on: req.db).with(\.$repository).all().flatMap { branches in
-                let branches = branches.filter { $0.$repository.id ==  repository.id }
+                let branches = branches.filter { $0.$repository.id == repository.id }
                 
                 return PullRequest.query(on: req.db).all().flatMap { pullRequests in
                     branches.forEach { branch in
@@ -66,7 +65,7 @@ struct ReposController: RouteCollection {
                         iterations.append(Double(iteration))
                         
                         if let firstPullRequest = pullRequests.first {
-                            let distance = firstPullRequest.creationDate/1000 - branch.creationDate
+                            let distance = firstPullRequest.creationDate / 1000 - branch.creationDate
                             print(distance)
                             
                             openingTimes.append(distance)
@@ -105,9 +104,8 @@ struct ReposController: RouteCollection {
                                                                         averageViolations: "n/a")
                                 
                                 return req.view.render("repositoryOverview", context)
-                                
                             } else {
-                                let averageViolations =  statistics.compactMap { $0.sumViolations }.reduce(0, +) / statistics.count
+                                let averageViolations = statistics.compactMap { $0.sumViolations }.reduce(0, +) / statistics.count
                                 let resolvingTime = averageResolvingTime.isNaN ? 0 : averageResolvingTime
                                 let iterations = averageIterations.isNaN ? 0 : averageIterations
                                 let timeUntilOpening = averageTimeUntilOpening.isNaN ? 0 : averageTimeUntilOpening
@@ -159,7 +157,7 @@ struct ReposController: RouteCollection {
             }
             
             return Branch.query(on: req.db).with(\.$repository).all().flatMap { branches in
-                let branches = branches.filter { $0.$repository.id ==  repository.id }
+                let branches = branches.filter { $0.$repository.id == repository.id }
                 
                 return PullRequest.query(on: req.db).all().flatMap { pullRequests in
                     branches.forEach { branch in
@@ -221,7 +219,6 @@ struct ReposController: RouteCollection {
             }
         }
     }
-    
 }
 
 struct AllRepositoriesContext: Encodable {
@@ -261,14 +258,14 @@ struct BranchContext: Content {
 
 extension Int {
     var seconds: Int {
-        return self % 60
+        self % 60
     }
     
     var minutes: Int {
-        return (self % 3600) / 60
+        (self % 3600) / 60
     }
     
     var hours: Int {
-        return (self % 86400) / 3600
+        (self % 86400) / 3600
     }
 }
