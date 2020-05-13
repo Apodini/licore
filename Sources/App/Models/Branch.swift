@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-///LI.CO.RE's representation of a 'Branch' defining a 'schema' for the persistence layer.
+///LI.CO.RE's representation of a `Branch` defining a `schema for the persistence layer.
 public final class Branch: Model, Content {
     
     public static var schema: String = "branches"

@@ -9,7 +9,7 @@ import Vapor
 import Fluent
 
 ///LI.CO.RE's persistable user class which is used for authentication.
-///This class contains the user's 'name', and 'email'.
+///This class contains the user's `name`, and `email`.
 public final class LicoreUser: Content, Model, ModelSessionAuthenticatable {
     
     public static var schema: String = "users"

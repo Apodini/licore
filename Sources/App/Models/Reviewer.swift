@@ -8,9 +8,9 @@
 import Vapor
 import Fluent
 
-///Representation of a 'Reviewer' defining a 'schema' for the persistence layer.
-///This class contains the developer's 'slug', 'name', and 'email'.
-///It has two siblings relations to 'LicoreProject' and to 'Repository'.
+///Representation of a `Reviewer` defining a `schema` for the persistence layer.
+///This class contains the developer's `slug`, `name`, and `email`.
+///It has two siblings relations to `LicoreProject` and to `Repository`.
 public final class Reviewer: Content, Model {
     
     public static var schema: String = "reviewers"

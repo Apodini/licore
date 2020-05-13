@@ -8,9 +8,9 @@
 import Vapor
 import Fluent
 
-///Representation of a 'Developer' defining a 'schema' for the persistence layer.
-///This class contains the developer's 'slug', 'name', and 'email'.
-///It has a siblings relation to 'Repository' and a children relation to 'ReviewStatistics'.
+///Representation of a `Developer` defining a `schema` for the persistence layer.
+///This class contains the developer's `slug`, `name`, and `email`.
+///It has a siblings relation to `Repository` and a children relation to `ReviewStatistics`.
 public final class Developer: Content, Model {
     
     public static var schema: String = "developers"

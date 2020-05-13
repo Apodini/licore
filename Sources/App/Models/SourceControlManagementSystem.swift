@@ -8,9 +8,9 @@
 import Vapor
 import Fluent
 
-///LI.CO.RE's representation of a 'SourceControlManagementSystem' (SCM) defining a 'schema' for the persistence layer.
-///This class contains the SCM's 'name', 'scmType' definig the SCM provider, 'scmURL' the URL to the actual SCM System, and the 'token' for the SCM authentication.
-///It has a a childrens relation to 'LicoreProject'.
+///LI.CO.RE's representation of a `SourceControlManagementSystem` (SCM) defining a `schema` for the persistence layer.
+///This class contains the SCM's `name`, `scmType` definig the SCM provider, `scmURL` the URL to the actual SCM System, and the `token`for the SCM authentication.
+///It has a a childrens relation to `LicoreProject`.
 public final class SourceControlManagementSystem: Model, Content {
     
     public static var schema: String = "scmsystems"

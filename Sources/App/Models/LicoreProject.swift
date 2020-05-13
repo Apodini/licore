@@ -8,9 +8,9 @@
 import Vapor
 import Fluent
 
-///LI.CO.RE's project class defining a 'schema' for the persistence layer.
-///This class contains the project's 'name', 'key', and 'rules', and the 'slackToken'.
-///It has a siblings relation to 'Reviewer' and a children relation to 'Repostiory'.
+///LI.CO.RE's project class defining a `schema` for the persistence layer.
+///This class contains the project's `name`, `key`, and `rules`, and the `slackToken`.
+///It has a siblings relation to `Reviewer` and a children relation to `Repostiory`.
 public final class LicoreProject: Model, Content {
     
     public static var schema: String = "projects"
