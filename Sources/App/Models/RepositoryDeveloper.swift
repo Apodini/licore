@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-///This class holds the siblings relation between a 'Repository' and 'Developer'.
+///This class holds the siblings relation between a`Repository` and `Developer`.
 public final class RepositoryDeveloper: Model {
     
     public static let schema: String = "repository_developer"

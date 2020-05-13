@@ -9,7 +9,7 @@ import Vapor
 import Queues
 import Fluent
 
-///A 'ReviewJob' handling the dequeueing process when a 'ReviewJob' is started.
+///A `ReviewJob` handling the dequeueing process when a ReviewJob` is started.
 public struct ReviewJob: Job {
     
     let req: Request

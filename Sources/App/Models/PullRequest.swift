@@ -8,10 +8,10 @@
 import Vapor
 import Fluent
 
-///LI.CO.RE's representation of a 'Pull Request' defining a 'schema' for the persistence layer.
-///This class contains the project's 'scmId', 'creationDate', 'latestCommit', and the 'refId'.
-///The 'scmId' is the id value of the pull request at the remote source control management system.
-///It has a parent relation to 'Repository' and a children relation to 'StatusChange'.
+///LI.CO.RE's representation of a `Pull Request`defining a `schema`for the persistence layer.
+///This class contains the project's `scmId`, `creationDate`, `latestCommit`, and the `refId`.
+///The `scmId` is the id value of the pull request at the remote source control management system.
+///It has a parent relation to `Repository`and a children relation to `StatusChange`.
 public final class PullRequest: Model, Content {
     
     public static var schema: String = "pullrequests"
