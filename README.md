@@ -11,7 +11,7 @@
     </a>
 </p>
 
-LI.CO.RE (Lint Code Review) is a scalable and extensible Lint Code Review Bot for GitHub and BitBucket. It uses the SwiftLint framework for the code analysis and posts its outputs as inline comments.
+`LI.CO.RE` (Lint Code Review) is a scalable and extensible Lint Code Review Bot for GitHub and BitBucket. It uses the SwiftLint framework for the code analysis and posts its outputs as inline comments.
 
 ## Requirements
 `LI.CO.RE` works with Vapor version 4.0 or higher and requires the Swift version to be 5.2 or higher.
@@ -33,13 +33,13 @@ In this section you will find some instructions for setting up `LI.CO.RE`.
 When starting `LI.CO.RE` for the first time, it is recommended to change the initial password.
 For changing the password, please go to the dropdown menu `Configs` and select `Update User`.
 
-![](https://github.com/Apodini/licore/raw/develop/images/Change_Password)
+![](https://github.com/Apodini/licore/raw/develop/images/Change_Password.png)
 
 ### Define your Application URL
 For being able to setup Webhooks automatically, it is necessary to enter the URL to your `LI.CO.RE` instance.
 For setting the Application URL, please go to the dropdown menu `Configs` and select `Set Hook URL`.
 
-![](https://github.com/Apodini/licore/raw/develop/images/Hook_URL)
+![](https://github.com/Apodini/licore/raw/develop/images/Hook_URL.png)
 
 ### Setup a Source Control Management System
 To give `LI.CO.RE` access to your Source Control Management System, you can configure `LI.CO.RE` providing the following information:
@@ -51,7 +51,7 @@ To give `LI.CO.RE` access to your Source Control Management System, you can conf
 - `Password`: The password of the account used by `LI.CO.RE` for logging in.
 
 For setting up a Source Control Management System, please go to the dropdown menu `Configs` and select `Create a SCM`.
-![](https://github.com/Apodini/licore/raw/develop/images/SCM_Setup)
+![](https://github.com/Apodini/licore/raw/develop/images/SCM_Setup.png)
 
 ### Setup a Project in `LI.CO.RE`
 To make `LI.CO.RE` linting your project, you need to enter your project details.
@@ -63,7 +63,7 @@ To make `LI.CO.RE` linting your project, you need to enter your project details.
 - `Slack Token`: Bot token for your project's Slack workspace. Using this token `LI.CO.RE` is able to send reminder messages to your Developers.
 
 For setting up a Project, please go to the dropdown menu `Configs` and select `Project Configuration`.
-![](https://github.com/Apodini/licore/raw/develop/images/Project_Setup)
+![](https://github.com/Apodini/licore/raw/develop/images/Project_Setup.png)
 
 ### Setup Repositories & Webhooks & Developers
 You are almost there, we need to talk about 3 things:
@@ -77,7 +77,7 @@ You are almost there, we need to talk about 3 things:
 
 For setting up a Project, please go to the dropdown menu `Configs` and select `Project Configuration`.
 
-![](https://github.com/Apodini/licore/raw/develop/images/Project_Overview)
+![](https://github.com/Apodini/licore/raw/develop/images/Project_Overview.png)
 
 ## Contributing
 Contributions to this projects are welcome. Please make sure to read the [contribution guidelines](https://github.com/Apodini/.github/blob/master/CONTRIBUTING.md) first.
