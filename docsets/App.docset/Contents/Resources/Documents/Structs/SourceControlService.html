@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SourceControlService Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/SourceControlService" class="dashAnchor"></a>
+
+    <a title="SourceControlService Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          App Docs
+        </a>
+         (19% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">App Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      SourceControlService Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../readme.html">README</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Branch.html">Branch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Comment.html">Comment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Developer.html">Developer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes.html#/s:3App4DiffC">Diff</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LicoreConfig.html">LicoreConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LicoreProject.html">LicoreProject</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LicoreUser.html">LicoreUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ProjectReviewer.html">ProjectReviewer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PullRequest.html">PullRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Repository.html">Repository</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RepositoryDeveloper.html">RepositoryDeveloper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RepositoryReviewer.html">RepositoryReviewer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Review.html">Review</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ReviewJobData.html">ReviewJobData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ReviewStatistics.html">ReviewStatistics</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Reviewer.html">Reviewer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes.html#/s:3App12SlackServiceC">SlackService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SourceControlManagementSystem.html">SourceControlManagementSystem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StatusChange.html">StatusChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SwiftLint.html">SwiftLint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes.html#/s:3App4TaskC">Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UserToken.html">UserToken</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CommentType.html">CommentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/JobStatus.html">JobStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PullRequestStatus.html">PullRequestStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SourceControlType.html">SourceControlType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3App3appy5Vapor11ApplicationCAC11EnvironmentVKF">app(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/LicoreModelConvertable.html">LicoreModelConvertable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Reviewable.html">Reviewable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SourceControlServable.html">SourceControlServable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/JobRepeater.html">JobRepeater</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ReviewJob.html">ReviewJob</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SlackReminderJob.html">SlackReminderJob</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SourceControlService.html">SourceControlService</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>SourceControlService</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SourceControlService</span></code></pre>
+
+                </div>
+              </div>
+            <p>This service interacts with the respective <code>SourceControlMangementSystem</code> specified in the <code><a href="../Classes/LicoreProject.html">LicoreProject</a></code>.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV7serviceAcA0bC8Servable_p_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(service:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV7serviceAcA0bC8Servable_p_tcfc">init(service:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">service</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SourceControlServable.html">SourceControlServable</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV15downloadSources11pullRequest3req10completionyAA04PullH0C_5Vapor0H0CyyctF"></a>
+                    <a name="//apple_ref/swift/Method/downloadSources(pullRequest:req:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV15downloadSources11pullRequest3req10completionyAA04PullH0C_5Vapor0H0CyyctF">downloadSources(pullRequest:<wbr>req:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">downloadSources</span><span class="p">(</span><span class="nv">pullRequest</span><span class="p">:</span> <span class="kt"><a href="../Classes/PullRequest.html">PullRequest</a></span><span class="p">,</span>
+                            <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">,</span>
+                            <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV14hookRepository7project14repositoryName0E3URL3req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGAA13LicoreProjectC_S2S5Vapor7RequestCtF"></a>
+                    <a name="//apple_ref/swift/Method/hookRepository(project:repositoryName:hookURL:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV14hookRepository7project14repositoryName0E3URL3req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGAA13LicoreProjectC_S2S5Vapor7RequestCtF">hookRepository(project:<wbr>repositoryName:<wbr>hookURL:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">hookRepository</span><span class="p">(</span><span class="nv">project</span><span class="p">:</span> <span class="kt"><a href="../Classes/LicoreProject.html">LicoreProject</a></span><span class="p">,</span>
+                           <span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                           <span class="nv">hookURL</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                           <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">HTTPStatus</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV13getDevelopers14repositoryName3req3NIO15EventLoopFutureCySayAA9DeveloperCGGSS_5Vapor7RequestCtF"></a>
+                    <a name="//apple_ref/swift/Method/getDevelopers(repositoryName:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV13getDevelopers14repositoryName3req3NIO15EventLoopFutureCySayAA9DeveloperCGGSS_5Vapor7RequestCtF">getDevelopers(repositoryName:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDevelopers</span><span class="p">(</span><span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Developer.html">Developer</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV15getRepositories3req3NIO15EventLoopFutureCySayAA10RepositoryCGG5Vapor7RequestC_tF"></a>
+                    <a name="//apple_ref/swift/Method/getRepositories(req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV15getRepositories3req3NIO15EventLoopFutureCySayAA10RepositoryCGG5Vapor7RequestC_tF">getRepositories(req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRepositories</span><span class="p">(</span><span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Repository.html">Repository</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV11getComments14repositoryName13pullRequestId3req3NIO15EventLoopFutureCySayAA7CommentCGGSS_Si5Vapor0J0CtF"></a>
+                    <a name="//apple_ref/swift/Method/getComments(repositoryName:pullRequestId:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV11getComments14repositoryName13pullRequestId3req3NIO15EventLoopFutureCySayAA7CommentCGGSS_Si5Vapor0J0CtF">getComments(repositoryName:<wbr>pullRequestId:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getComments</span><span class="p">(</span><span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">pullRequestId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Comment.html">Comment</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV7getDiff14repositoryName13pullRequestId3req3NIO15EventLoopFutureCyAA0F0CGSS_Si5Vapor0J0CtF"></a>
+                    <a name="//apple_ref/swift/Method/getDiff(repositoryName:pullRequestId:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV7getDiff14repositoryName13pullRequestId3req3NIO15EventLoopFutureCyAA0F0CGSS_Si5Vapor0J0CtF">getDiff(repositoryName:<wbr>pullRequestId:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDiff</span><span class="p">(</span><span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                    <span class="nv">pullRequestId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                    <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Classes.html#/s:3App4DiffC">Diff</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV11postComment14repositoryName11pullRequest4diff7comment3req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGSS_AA04PullJ0CAA4DiffCAA0F0C5Vapor0J0CtF"></a>
+                    <a name="//apple_ref/swift/Method/postComment(repositoryName:pullRequest:diff:comment:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV11postComment14repositoryName11pullRequest4diff7comment3req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGSS_AA04PullJ0CAA4DiffCAA0F0C5Vapor0J0CtF">postComment(repositoryName:<wbr>pullRequest:<wbr>diff:<wbr>comment:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">postComment</span><span class="p">(</span><span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                        <span class="nv">pullRequest</span><span class="p">:</span> <span class="kt"><a href="../Classes/PullRequest.html">PullRequest</a></span><span class="p">,</span>
+                        <span class="nv">diff</span><span class="p">:</span> <span class="kt"><a href="../Classes.html#/s:3App4DiffC">Diff</a></span><span class="p">,</span>
+                        <span class="nv">comment</span><span class="p">:</span> <span class="kt"><a href="../Classes/Comment.html">Comment</a></span><span class="p">,</span>
+                        <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">HTTPStatus</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV18postGeneralComment14repositoryName11pullRequest8comments3req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGSS_AA04PullK0CSayAA0G0CG5Vapor0K0CtF"></a>
+                    <a name="//apple_ref/swift/Method/postGeneralComment(repositoryName:pullRequest:comments:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV18postGeneralComment14repositoryName11pullRequest8comments3req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGSS_AA04PullK0CSayAA0G0CG5Vapor0K0CtF">postGeneralComment(repositoryName:<wbr>pullRequest:<wbr>comments:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">postGeneralComment</span><span class="p">(</span><span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                               <span class="nv">pullRequest</span><span class="p">:</span> <span class="kt"><a href="../Classes/PullRequest.html">PullRequest</a></span><span class="p">,</span>
+                               <span class="nv">comments</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Comment.html">Comment</a></span><span class="p">],</span>
+                               <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">HTTPStatus</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV17deleteAllComments14repositoryName13pullRequestId3reqySS_Si5Vapor0K0CtF"></a>
+                    <a name="//apple_ref/swift/Method/deleteAllComments(repositoryName:pullRequestId:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV17deleteAllComments14repositoryName13pullRequestId3reqySS_Si5Vapor0K0CtF">deleteAllComments(repositoryName:<wbr>pullRequestId:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteAllComments</span><span class="p">(</span><span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                              <span class="nv">pullRequestId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                              <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV8getTasks14repositoryName11pullRequest3req3NIO15EventLoopFutureCySayAA4TaskCSgGGSS_AA04PullJ0C5Vapor0J0CtF"></a>
+                    <a name="//apple_ref/swift/Method/getTasks(repositoryName:pullRequest:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV8getTasks14repositoryName11pullRequest3req3NIO15EventLoopFutureCySayAA4TaskCSgGGSS_AA04PullJ0C5Vapor0J0CtF">getTasks(repositoryName:<wbr>pullRequest:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTasks</span><span class="p">(</span><span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                     <span class="nv">pullRequest</span><span class="p">:</span> <span class="kt"><a href="../Classes/PullRequest.html">PullRequest</a></span><span class="p">,</span>
+                     <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes.html#/s:3App4TaskC">Task</a></span><span class="p">?]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV9postTasks14repositoryName11pullRequest5tasks3req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGSS_AA04PullJ0CSayAA4TaskCG5Vapor0J0CtF"></a>
+                    <a name="//apple_ref/swift/Method/postTasks(repositoryName:pullRequest:tasks:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV9postTasks14repositoryName11pullRequest5tasks3req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGSS_AA04PullJ0CSayAA4TaskCG5Vapor0J0CtF">postTasks(repositoryName:<wbr>pullRequest:<wbr>tasks:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">postTasks</span><span class="p">(</span><span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                      <span class="nv">pullRequest</span><span class="p">:</span> <span class="kt"><a href="../Classes/PullRequest.html">PullRequest</a></span><span class="p">,</span>
+                      <span class="nv">tasks</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes.html#/s:3App4TaskC">Task</a></span><span class="p">],</span>
+                      <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">HTTPStatus</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV11resolveTask2id3req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGSi_5Vapor7RequestCtF"></a>
+                    <a name="//apple_ref/swift/Method/resolveTask(id:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV11resolveTask2id3req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGSi_5Vapor7RequestCtF">resolveTask(id:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resolveTask</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                        <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">HTTPStatus</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV14getPullRequest14repositoryName04pullG2Id3req3NIO15EventLoopFutureCyAA0fG0CSgGSS_Si5Vapor0G0CtF"></a>
+                    <a name="//apple_ref/swift/Method/getPullRequest(repositoryName:pullRequestId:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV14getPullRequest14repositoryName04pullG2Id3req3NIO15EventLoopFutureCyAA0fG0CSgGSS_Si5Vapor0G0CtF">getPullRequest(repositoryName:<wbr>pullRequestId:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPullRequest</span><span class="p">(</span><span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                           <span class="nv">pullRequestId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                           <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/PullRequest.html">PullRequest</a></span><span class="p">?</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV15getPullRequests14repositoryName3req3NIO15EventLoopFutureCySayAA0F7RequestCGGSS_5Vapor0O0CtF"></a>
+                    <a name="//apple_ref/swift/Method/getPullRequests(repositoryName:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV15getPullRequests14repositoryName3req3NIO15EventLoopFutureCySayAA0F7RequestCGGSS_5Vapor0O0CtF">getPullRequests(repositoryName:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPullRequests</span><span class="p">(</span><span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/PullRequest.html">PullRequest</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV18approvePullRequest14repositoryName04pullG03req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGSS_AA0fG0C5Vapor0G0CtF"></a>
+                    <a name="//apple_ref/swift/Method/approvePullRequest(repositoryName:pullRequest:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV18approvePullRequest14repositoryName04pullG03req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGSS_AA0fG0C5Vapor0G0CtF">approvePullRequest(repositoryName:<wbr>pullRequest:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">approvePullRequest</span><span class="p">(</span><span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                               <span class="nv">pullRequest</span><span class="p">:</span> <span class="kt"><a href="../Classes/PullRequest.html">PullRequest</a></span><span class="p">,</span>
+                               <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">HTTPStatus</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App20SourceControlServiceV15markNeedsRework14repositoryName11pullRequest3req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGSS_AA04PullK0C5Vapor0K0CtF"></a>
+                    <a name="//apple_ref/swift/Method/markNeedsRework(repositoryName:pullRequest:req:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App20SourceControlServiceV15markNeedsRework14repositoryName11pullRequest3req3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOGSS_AA04PullK0C5Vapor0K0CtF">markNeedsRework(repositoryName:<wbr>pullRequest:<wbr>req:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markNeedsRework</span><span class="p">(</span><span class="nv">repositoryName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">pullRequest</span><span class="p">:</span> <span class="kt"><a href="../Classes/PullRequest.html">PullRequest</a></span><span class="p">,</span>
+                            <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">HTTPStatus</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Oguz Sutanrikulu</a>. All rights reserved. (Last updated: 2020-06-22)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

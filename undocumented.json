@@ -1,0 +1,1216 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Branch.swift",
+      "line": 14,
+      "symbol": "Branch.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Branch.swift",
+      "line": 17,
+      "symbol": "Branch.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Branch.swift",
+      "line": 20,
+      "symbol": "Branch.creationDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Branch.swift",
+      "line": 23,
+      "symbol": "Branch.refId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Branch.swift",
+      "line": 26,
+      "symbol": "Branch.repository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Branch.swift",
+      "line": 28,
+      "symbol": "Branch.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Comment.swift",
+      "line": 12,
+      "symbol": "CommentType.warning",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Comment.swift",
+      "line": 13,
+      "symbol": "CommentType.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Comment.swift",
+      "line": 14,
+      "symbol": "CommentType.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Comment.swift",
+      "line": 21,
+      "symbol": "Comment.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Comment.swift",
+      "line": 22,
+      "symbol": "Comment.version",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Comment.swift",
+      "line": 23,
+      "symbol": "Comment.line",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Comment.swift",
+      "line": 24,
+      "symbol": "Comment.lineType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Comment.swift",
+      "line": 25,
+      "symbol": "Comment.ruleDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Comment.swift",
+      "line": 26,
+      "symbol": "Comment.content",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Comment.swift",
+      "line": 27,
+      "symbol": "Comment.path",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Comment.swift",
+      "line": 28,
+      "symbol": "Comment.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Developer.swift",
+      "line": 16,
+      "symbol": "Developer.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Developer.swift",
+      "line": 19,
+      "symbol": "Developer.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Developer.swift",
+      "line": 22,
+      "symbol": "Developer.slug",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Developer.swift",
+      "line": 25,
+      "symbol": "Developer.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Developer.swift",
+      "line": 28,
+      "symbol": "Developer.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Developer.swift",
+      "line": 31,
+      "symbol": "Developer.repository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Developer.swift",
+      "line": 34,
+      "symbol": "Developer.reviewStatistics",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Developer.swift",
+      "line": 36,
+      "symbol": "Developer.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreConfig.swift",
+      "line": 14,
+      "symbol": "LicoreConfig.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreConfig.swift",
+      "line": 17,
+      "symbol": "LicoreConfig.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreConfig.swift",
+      "line": 22,
+      "symbol": "LicoreConfig.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreProject.swift",
+      "line": 16,
+      "symbol": "LicoreProject.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreProject.swift",
+      "line": 19,
+      "symbol": "LicoreProject.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreProject.swift",
+      "line": 22,
+      "symbol": "LicoreProject.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreProject.swift",
+      "line": 25,
+      "symbol": "LicoreProject.key",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreProject.swift",
+      "line": 28,
+      "symbol": "LicoreProject.rules",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreProject.swift",
+      "line": 31,
+      "symbol": "LicoreProject.slackToken",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreProject.swift",
+      "line": 34,
+      "symbol": "LicoreProject.scmSystem",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreProject.swift",
+      "line": 37,
+      "symbol": "LicoreProject.repositories",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreProject.swift",
+      "line": 40,
+      "symbol": "LicoreProject.reviewers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreProject.swift",
+      "line": 42,
+      "symbol": "LicoreProject.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreUser.swift",
+      "line": 15,
+      "symbol": "LicoreUser.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreUser.swift",
+      "line": 18,
+      "symbol": "LicoreUser.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreUser.swift",
+      "line": 21,
+      "symbol": "LicoreUser.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreUser.swift",
+      "line": 24,
+      "symbol": "LicoreUser.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreUser.swift",
+      "line": 33,
+      "symbol": "LicoreUser.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreUser.swift",
+      "line": 45,
+      "symbol": "LicoreUser.usernameKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreUser.swift",
+      "line": 46,
+      "symbol": "LicoreUser.passwordHashKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/LicoreUser.swift",
+      "line": 48,
+      "symbol": "LicoreUser.verify(password:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ProjectReviewer.swift",
+      "line": 14,
+      "symbol": "ProjectReviewer.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ProjectReviewer.swift",
+      "line": 17,
+      "symbol": "ProjectReviewer.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ProjectReviewer.swift",
+      "line": 20,
+      "symbol": "ProjectReviewer.project",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ProjectReviewer.swift",
+      "line": 23,
+      "symbol": "ProjectReviewer.reviewer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ProjectReviewer.swift",
+      "line": 25,
+      "symbol": "ProjectReviewer.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/PullRequest.swift",
+      "line": 17,
+      "symbol": "PullRequest.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/PullRequest.swift",
+      "line": 20,
+      "symbol": "PullRequest.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/PullRequest.swift",
+      "line": 23,
+      "symbol": "PullRequest.scmId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/PullRequest.swift",
+      "line": 26,
+      "symbol": "PullRequest.creationDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/PullRequest.swift",
+      "line": 29,
+      "symbol": "PullRequest.latestCommit",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/PullRequest.swift",
+      "line": 32,
+      "symbol": "PullRequest.refId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/PullRequest.swift",
+      "line": 35,
+      "symbol": "PullRequest.repository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/PullRequest.swift",
+      "line": 38,
+      "symbol": "PullRequest.statusChanges",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/PullRequest.swift",
+      "line": 40,
+      "symbol": "PullRequest.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Repository.swift",
+      "line": 18,
+      "symbol": "Repository.IDValue",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Repository.swift",
+      "line": 20,
+      "symbol": "Repository.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Repository.swift",
+      "line": 23,
+      "symbol": "Repository.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Repository.swift",
+      "line": 26,
+      "symbol": "Repository.scmId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Repository.swift",
+      "line": 29,
+      "symbol": "Repository.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Repository.swift",
+      "line": 32,
+      "symbol": "Repository.project",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Repository.swift",
+      "line": 35,
+      "symbol": "Repository.branches",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Repository.swift",
+      "line": 38,
+      "symbol": "Repository.pullRequests",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Repository.swift",
+      "line": 41,
+      "symbol": "Repository.developers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Repository.swift",
+      "line": 44,
+      "symbol": "Repository.reviewers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Repository.swift",
+      "line": 46,
+      "symbol": "Repository.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/RepositoryDeveloper.swift",
+      "line": 14,
+      "symbol": "RepositoryDeveloper.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/RepositoryDeveloper.swift",
+      "line": 17,
+      "symbol": "RepositoryDeveloper.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/RepositoryDeveloper.swift",
+      "line": 20,
+      "symbol": "RepositoryDeveloper.repository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/RepositoryDeveloper.swift",
+      "line": 23,
+      "symbol": "RepositoryDeveloper.developer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/RepositoryDeveloper.swift",
+      "line": 25,
+      "symbol": "RepositoryDeveloper.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/RepositoryReviewer.swift",
+      "line": 14,
+      "symbol": "RepositoryReviewer.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/RepositoryReviewer.swift",
+      "line": 17,
+      "symbol": "RepositoryReviewer.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/RepositoryReviewer.swift",
+      "line": 20,
+      "symbol": "RepositoryReviewer.repository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/RepositoryReviewer.swift",
+      "line": 23,
+      "symbol": "RepositoryReviewer.reviewer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/RepositoryReviewer.swift",
+      "line": 25,
+      "symbol": "RepositoryReviewer.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewJobData.swift",
+      "line": 13,
+      "symbol": "JobStatus.new",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewJobData.swift",
+      "line": 14,
+      "symbol": "JobStatus.done",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewJobData.swift",
+      "line": 15,
+      "symbol": "JobStatus.failed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewJobData.swift",
+      "line": 22,
+      "symbol": "ReviewJobData.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewJobData.swift",
+      "line": 25,
+      "symbol": "ReviewJobData.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewJobData.swift",
+      "line": 28,
+      "symbol": "ReviewJobData.status",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewJobData.swift",
+      "line": 31,
+      "symbol": "ReviewJobData.pullRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewJobData.swift",
+      "line": 33,
+      "symbol": "ReviewJobData.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewJobData.swift",
+      "line": 35,
+      "symbol": "ReviewJobData.init(id:status:pullRequestID:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewStatistics.swift",
+      "line": 15,
+      "symbol": "ReviewStatistics.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewStatistics.swift",
+      "line": 18,
+      "symbol": "ReviewStatistics.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewStatistics.swift",
+      "line": 21,
+      "symbol": "ReviewStatistics.violations",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewStatistics.swift",
+      "line": 24,
+      "symbol": "ReviewStatistics.developer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/ReviewStatistics.swift",
+      "line": 26,
+      "symbol": "ReviewStatistics.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Reviewer.swift",
+      "line": 16,
+      "symbol": "Reviewer.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Reviewer.swift",
+      "line": 19,
+      "symbol": "Reviewer.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Reviewer.swift",
+      "line": 22,
+      "symbol": "Reviewer.slug",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Reviewer.swift",
+      "line": 25,
+      "symbol": "Reviewer.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Reviewer.swift",
+      "line": 28,
+      "symbol": "Reviewer.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Reviewer.swift",
+      "line": 31,
+      "symbol": "Reviewer.projects",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Reviewer.swift",
+      "line": 34,
+      "symbol": "Reviewer.repositories",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/Reviewer.swift",
+      "line": 36,
+      "symbol": "Reviewer.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/SourceControlManagementSystem.swift",
+      "line": 16,
+      "symbol": "SourceControlManagementSystem.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/SourceControlManagementSystem.swift",
+      "line": 19,
+      "symbol": "SourceControlManagementSystem.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/SourceControlManagementSystem.swift",
+      "line": 22,
+      "symbol": "SourceControlManagementSystem.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/SourceControlManagementSystem.swift",
+      "line": 25,
+      "symbol": "SourceControlManagementSystem.scmType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/SourceControlManagementSystem.swift",
+      "line": 28,
+      "symbol": "SourceControlManagementSystem.scmURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/SourceControlManagementSystem.swift",
+      "line": 31,
+      "symbol": "SourceControlManagementSystem.token",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/SourceControlManagementSystem.swift",
+      "line": 34,
+      "symbol": "SourceControlManagementSystem.projects",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/SourceControlManagementSystem.swift",
+      "line": 36,
+      "symbol": "SourceControlManagementSystem.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/StatusChange.swift",
+      "line": 16,
+      "symbol": "StatusChange.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/StatusChange.swift",
+      "line": 19,
+      "symbol": "StatusChange.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/StatusChange.swift",
+      "line": 22,
+      "symbol": "StatusChange.previousStatus",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/StatusChange.swift",
+      "line": 25,
+      "symbol": "StatusChange.newStatus",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/StatusChange.swift",
+      "line": 28,
+      "symbol": "StatusChange.date",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/StatusChange.swift",
+      "line": 33,
+      "symbol": "StatusChange.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/StatusChange.swift",
+      "line": 35,
+      "symbol": "StatusChange.init(id:previousStatus:newStatus:date:pullRequestID:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/UserToken.swift",
+      "line": 14,
+      "symbol": "UserToken.schema",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/UserToken.swift",
+      "line": 17,
+      "symbol": "UserToken.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/UserToken.swift",
+      "line": 25,
+      "symbol": "UserToken.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/UserToken.swift",
+      "line": 36,
+      "symbol": "UserToken.isValid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/UserToken.swift",
+      "line": 40,
+      "symbol": "UserToken.valueKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Models/UserToken.swift",
+      "line": 41,
+      "symbol": "UserToken.userKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Review/Review.swift",
+      "line": 16,
+      "symbol": "Review.init(review:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Review/Review.swift",
+      "line": 20,
+      "symbol": "Review.runReview(project:repository:pullRequest:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/Review/Reviewable.swift",
+      "line": 14,
+      "symbol": "Reviewable.runReview(project:repository:pullRequest:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/BitBucket/Responses/BitBucketWebhookResponse.swift",
+      "line": 11,
+      "symbol": "PullRequestStatus",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/BitBucket/Responses/BitBucketWebhookResponse.swift",
+      "line": 12,
+      "symbol": "PullRequestStatus.approved",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/BitBucket/Responses/BitBucketWebhookResponse.swift",
+      "line": 13,
+      "symbol": "PullRequestStatus.unapproved",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/BitBucket/Responses/BitBucketWebhookResponse.swift",
+      "line": 14,
+      "symbol": "PullRequestStatus.rework",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/LicoreModelConvertable.swift",
+      "line": 12,
+      "symbol": "LicoreModelConvertable.ReturnLicoreModel",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/LicoreModelConvertable.swift",
+      "line": 13,
+      "symbol": "LicoreModelConvertable.createLicoreModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 12,
+      "symbol": "SourceControlServable.getDevelopers(repositoryName:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 13,
+      "symbol": "SourceControlServable.getRepositories(req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 14,
+      "symbol": "SourceControlServable.getComments(repositoryName:pullRequestId:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 15,
+      "symbol": "SourceControlServable.postComment(repositoryName:pullRequest:comment:diff:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 16,
+      "symbol": "SourceControlServable.postGeneralComment(repositoryName:pullRequest:comments:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 17,
+      "symbol": "SourceControlServable.deleteAllComments(repositoryName:pullRequestId:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 18,
+      "symbol": "SourceControlServable.getTasks(repositoryName:pullRequest:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 19,
+      "symbol": "SourceControlServable.postTasks(repositoryName:pullRequest:tasks:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 20,
+      "symbol": "SourceControlServable.resolveTask(id:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 21,
+      "symbol": "SourceControlServable.approvePullRequest(repositoryName:pullRequest:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 22,
+      "symbol": "SourceControlServable.markNeedsRework(repositoryName:pullRequest:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 23,
+      "symbol": "SourceControlServable.hookRepository(project:repositoryName:hookURL:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 24,
+      "symbol": "SourceControlServable.getPullRequest(repositoryName:pullRequestId:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 25,
+      "symbol": "SourceControlServable.getPullRequests(repositoryName:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 26,
+      "symbol": "SourceControlServable.getDiff(repositoryName:pullRequestId:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlServable.swift",
+      "line": 27,
+      "symbol": "SourceControlServable.downloadSources(pullRequest:req:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 15,
+      "symbol": "SourceControlService.init(service:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 19,
+      "symbol": "SourceControlService.downloadSources(pullRequest:req:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 25,
+      "symbol": "SourceControlService.hookRepository(project:repositoryName:hookURL:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 32,
+      "symbol": "SourceControlService.getDevelopers(repositoryName:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 37,
+      "symbol": "SourceControlService.getRepositories(req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 41,
+      "symbol": "SourceControlService.getComments(repositoryName:pullRequestId:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 45,
+      "symbol": "SourceControlService.getDiff(repositoryName:pullRequestId:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 51,
+      "symbol": "SourceControlService.postComment(repositoryName:pullRequest:diff:comment:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 59,
+      "symbol": "SourceControlService.postGeneralComment(repositoryName:pullRequest:comments:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 66,
+      "symbol": "SourceControlService.deleteAllComments(repositoryName:pullRequestId:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 72,
+      "symbol": "SourceControlService.getTasks(repositoryName:pullRequest:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 78,
+      "symbol": "SourceControlService.postTasks(repositoryName:pullRequest:tasks:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 88,
+      "symbol": "SourceControlService.resolveTask(id:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 93,
+      "symbol": "SourceControlService.getPullRequest(repositoryName:pullRequestId:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 99,
+      "symbol": "SourceControlService.getPullRequests(repositoryName:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 104,
+      "symbol": "SourceControlService.approvePullRequest(repositoryName:pullRequest:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlService.swift",
+      "line": 110,
+      "symbol": "SourceControlService.markNeedsRework(repositoryName:pullRequest:req:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlType.swift",
+      "line": 12,
+      "symbol": "SourceControlType.bitbucket",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SCM/SourceControlType.swift",
+      "line": 13,
+      "symbol": "SourceControlType.github",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SwiftLint/SwiftLint.swift",
+      "line": 14,
+      "symbol": "SwiftLint.getFilePaths(at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SwiftLint/SwiftLint.swift",
+      "line": 32,
+      "symbol": "SwiftLint.createSwiftLintFile(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SwiftLint/SwiftLint.swift",
+      "line": 43,
+      "symbol": "SwiftLint.configFileExists(at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/SwiftLint/SwiftLint.swift",
+      "line": 59,
+      "symbol": "SwiftLint.runLinting(for:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/licore/licore/Sources/App/app.swift",
+      "line": 3,
+      "symbol": "app(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/runners/2.263.0/work/licore/licore"
+}
