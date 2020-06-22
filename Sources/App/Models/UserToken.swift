@@ -32,7 +32,7 @@ public final class UserToken: Content, Model {
     
 }
 
-extension UserToken: ModelUserToken {
+extension UserToken: ModelTokenAuthenticatable {
     public var isValid: Bool {
         return true
     }
