@@ -17,9 +17,8 @@ public struct SourceControlService {
     }
     
     public func downloadSources(pullRequest: PullRequest,
-                                req: Request,
-                                completion: @escaping () -> Void) {
-        service.downloadSources(pullRequest: pullRequest, req: req, completion: completion)
+                                req: Request) -> EventLoopFuture<URL> {
+        service.downloadSources(pullRequest: pullRequest, req: req)
     }
     
     public func hookRepository(project: LicoreProject,

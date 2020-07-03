@@ -40,7 +40,7 @@ class BitBucketReview: Reviewable {
                 self.createDirectory(pullRequest: pullRequest)
                 
                 logger.info("Downloading sources...")
-                sourceControlService.downloadSources(pullRequest: pullRequest, req: req) {
+                sourceControlService.downloadSources(pullRequest: pullRequest, req: req).map { _ in
                     
                     logger.info("Unzipping...")
                     self.unzipSources(fileName: "sourceFiles", fileExtension: ".zip", pullRequest: pullRequest)

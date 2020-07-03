@@ -24,5 +24,5 @@ public protocol SourceControlServable {
     func getPullRequest(repositoryName: String, pullRequestId: Int, req: Request) -> EventLoopFuture<PullRequest?>
     func getPullRequests(repositoryName: String, req: Request) -> EventLoopFuture<[PullRequest]>
     func getDiff(repositoryName: String, pullRequestId: Int, req: Request) -> EventLoopFuture<Diff>
-    func downloadSources(pullRequest: PullRequest, req: Request, completion: @escaping () -> Void)
+    func downloadSources(pullRequest: PullRequest, req: Request) -> EventLoopFuture<URL>
 }

@@ -339,32 +339,43 @@ class GitHubService: SourceControlServable {
         return req.eventLoop.future([])
     }
     
-    func downloadSources(pullRequest: PullRequest, req: Request, completion: @escaping () -> Void) {
-        logger.info("Downloading Sources for Commit: \(pullRequest.latestCommit)")
-        
-        Repository.find(pullRequest.$repository.id, on: req.db).whenSuccess { repository in
-            guard let repository = repository else { return }
-            
-            let uri = URI(string: "https://codeload.github.com/\(self.project.key)/\(repository.name)/legacy.zip/\(pullRequest.latestCommit)")
-            let headers = HTTPHeaders(dictionaryLiteral:
-                                     ("Authorization", "Basic \(self.scmSystem.token)"),
-                                     ("Content-Type", "application/json")
-            )
-            
-            logger.info("Downloading Sources from: \(uri)")
-            
-            do {
-                req.client.get(uri, headers: headers, beforeSend: { _ in
-                }).flatMapThrowing { response in
-                    let responseData = response.body?.withUnsafeReadableBytes {
-                        Data($0)
-                    }
-                    guard let data = responseData else { return }
-                    self.saveDataToFile(fileName: "sourceFiles", fileExtension: ".zip", commitHash: pullRequest.latestCommit, data: data)
-                    completion()
+    func downloadSources(pullRequest: PullRequest, req: Request) -> EventLoopFuture<URL> {
+        Repository
+            .find(pullRequest.$repository.id, on: req.db)
+            .flatMap { repository -> EventLoopFuture<URL> in
+                guard let repository = repository else {
+                    logger.error("Could not find a repository with the id \(pullRequest.$repository.id)")
+                    return req.eventLoop.makeFailedFuture(Abort(.internalServerError))
                 }
+                
+                let uri = URI(string: "https://codeload.github.com/\(self.project.key)/\(repository.name)/legacy.zip/\(pullRequest.latestCommit)")
+                let headers = HTTPHeaders(dictionaryLiteral:
+                     ("Authorization", "Basic \(self.scmSystem.token)"),
+                     ("Content-Type", "application/json")
+                )
+                
+                logger.info("Downloading Sources from: \(uri)")
+                
+                return req.client
+                    .get(uri, headers: headers)
+                    .flatMap { response -> EventLoopFuture<URL> in
+                        let responseData = response.body?.withUnsafeReadableBytes {
+                            Data($0)
+                        }
+                        guard let data = responseData else {
+                            logger.error("Could not get the data from the request")
+                            return req.eventLoop.makeFailedFuture(Abort(.internalServerError))
+                        }
+                        
+                        let dataResult = self.saveDataToFile(fileName: "sourceFiles", fileExtension: ".zip", commitHash: pullRequest.latestCommit, data: data)
+                        switch dataResult {
+                        case let .success(url):
+                            return req.eventLoop.makeSucceededFuture(url)
+                        case let .failure(error):
+                            return req.eventLoop.makeFailedFuture(error)
+                        }
+                    }
             }
-        }
     }
     
     func hookRepository(project: LicoreProject,
@@ -465,11 +476,12 @@ class GitHubService: SourceControlServable {
     
 }
 
+
 extension GitHubService {
     func saveDataToFile(fileName: String,
                         fileExtension: String,
                         commitHash: String,
-                        data: Data) {
+                        data: Data) -> Result<URL, Error>{
         let dirs = DirectoryConfiguration.self
         let path = dirs.detect().workingDirectory
         
@@ -480,8 +492,10 @@ extension GitHubService {
         
         do {
             try data.write(to: fileURL)
+            return .success(fileURL)
         } catch {
-            logger.warning("Could not write data to disk!")
+            logger.error("Could not write data to disk!")
+            return .failure(Abort(.internalServerError))
         }
     }
 }
