@@ -141,7 +141,7 @@ extension WebhooksController {
                                                                              repository: webhookContent.repository,
                                                                              changes: webhookContent.changes,
                                                                              previousStatus: webhookContent.previousStatus)
-                            return addToQueue(req: req, webhookContent: newWebhookContent)
+                            return self.addToQueue(req: req, webhookContent: newWebhookContent)
                         }
                         
                         return PullRequest
