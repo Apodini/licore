@@ -32,6 +32,7 @@ extension WebhooksController {
             
             return Repository
                 .query(on: req.db)
+                .with(\.$project)
                 .all()
                 .flatMap { repositories -> EventLoopFuture<Void> in
                     guard let repositoryID = repositories
@@ -90,7 +91,8 @@ extension WebhooksController {
                 
                 return Repository
                     .query(on: req.db)
-                    .with(\.$project).all()
+                    .with(\.$project)
+                    .all()
                     .flatMap { repositories in
                         guard let repositoryID = repositories
                                 .first(where: { $0.project.key == repository.project.key && $0.scmId == repository.id })?
@@ -119,7 +121,7 @@ extension WebhooksController {
                     .flatMap { project -> EventLoopFuture<SourceControlServable?> in
                         guard let project = project else {
                             logger.warning("Project not found!")
-                            return req.eventLoop.makeFailedFuture(Abort(.internalServerError, reason: "Project not found!"))
+                            return req.eventLoop.makeFailedFuture(Abort(.internalServerError, reason: "Project with the key \(repository.project.key) not found!"))
                         }
                         
                         return project.sourceControlService(req: req)
